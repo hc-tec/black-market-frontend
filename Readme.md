@@ -1,6 +1,7 @@
 # 二手市场前端代码 UNI-APP
 
 ## 如何运行
+* git clone https://github.com/hc-tec/black-market-frontend.git
 * uni-app需要使用专用的编辑器 [Hbuilder X](https://www.dcloud.io/hbuilderx.html) 进行开发，首先需要进官网安装这个软件
 * 提前注册一个 dcloud 账号
 * 运行 Hbuilder X，打开 black-market-frontend 项目，接着在标签页中选择运行->运行到浏览器->chrome(edge)，选择完成后，项目会开始编译。
