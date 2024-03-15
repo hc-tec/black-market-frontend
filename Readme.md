@@ -18,6 +18,8 @@
 * App.vue 主要配置全局数据
 
 
+## 一些文档
+uni-app：[uni-app](https://uniapp.dcloud.net.cn/)
 
 
 
