@@ -1,0 +1,1 @@
+<view class="ncu-chat-operation _div"><block wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="icon"><ncu-icon-wrapper class="ncu-chat-operation-wrapper" vue-id="{{'02f26005-1-'+index}}" icon="{{item.icon}}" label="{{item.label}}" data-event-opts="{{[['^click',[['$emit',['click',index]]]]]}}" bind:click="__e" bind:__l="__l"></ncu-icon-wrapper></block></view>

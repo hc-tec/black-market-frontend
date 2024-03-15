@@ -1,0 +1,39 @@
+.ncu-scroll-items-wrapper {
+  vertical-align: top;
+  font-size: 40px;
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.mall-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .8em .6em 0;
+}
+.nav-bar-left {
+  font-size: .9rem;
+  color: var(--main-light-color);
+  font-weight: 400;
+}
+.nav-bar-left [class^=cuIcon] {
+  font-size: 1rem;
+}
+
+.ncu-forums.data-v-6daee70a {
+  width: 100%;
+  height: 100vh;
+}
+.forum-nav.data-v-6daee70a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: .8em .6em 0;
+}
+
+.container.data-v-57280228 {
+  width: 100%;
+  height: 100vh;
+}
+.swiper.data-v-57280228 {
+  height: 88%;
+}
+

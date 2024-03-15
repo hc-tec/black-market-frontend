@@ -1,0 +1,1 @@
+<view class="no-data _div data-v-22215598"><label class="{{['_span','data-v-22215598',icon]}}" style="{{'font-size:'+(getIconSize)+';'}}"></label><view class="_p data-v-22215598">{{text}}</view><slot></slot></view>

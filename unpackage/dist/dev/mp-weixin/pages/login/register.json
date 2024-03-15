@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-form-item": "/components/ncu-form-item/ncu-form-item",
+    "ncu-dance-words": "/components/ncu-dance-words/ncu-dance-words",
+    "ncu-img-choose": "/components/ncu-img-choose/ncu-img-choose",
+    "v-input": "/components/v-input/v-input",
+    "v-valid-input": "/components/v-valid-input/v-valid-input",
+    "ncu-button": "/components/ncu-button/ncu-button",
+    "ncu-popup-select": "/components/ncu-popup-select/ncu-popup-select"
+  }
+}

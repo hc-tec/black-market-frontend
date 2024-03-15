@@ -1,0 +1,16 @@
+.light-input-wrapper.data-v-3116dbac {
+  position: relative;
+}
+.light-input.data-v-3116dbac,
+.light-textarea.data-v-3116dbac {
+  width: 100%;
+  background-color: var(--main-lighter-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: auto;
+  font-size: 14px;
+}
+.light-textarea.data-v-3116dbac {
+  height: 200px;
+}
+

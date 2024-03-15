@@ -1,0 +1,23 @@
+.ncu-nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.divided {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ncu-nav {
+  position: fixed;
+  z-index: 1;
+}
+.ncu-nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 5rpx;
+  margin: 0 5rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+

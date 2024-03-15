@@ -1,0 +1,45 @@
+.user-info-card.data-v-797578b8 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+.user-info-card ._div.data-v-797578b8 {
+  margin-top: 5px;
+}
+.user-info-card-header.data-v-797578b8 {
+  display: flex;
+}
+.user-info-card__avatar.data-v-797578b8 {
+  margin-right: 15px;
+}
+.user-info-card__user-name.data-v-797578b8 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.user-info-card .off.data-v-797578b8::after {
+  content: "off";
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  padding: 0 12rpx;
+  background-color: #8e8e8e;
+  color: white;
+  border-radius: 5000rpx;
+}
+.user-info-card__profile.data-v-797578b8 {
+  display: flex;
+  align-items: center;
+}
+.user-info-card__location.data-v-797578b8 {
+  display: flex;
+  align-items: center;
+}
+.user-info-card [class*=cuIcon].data-v-797578b8 {
+  font-size: 18px;
+  margin-right: 5px;
+}
+

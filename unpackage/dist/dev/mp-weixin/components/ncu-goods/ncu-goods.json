@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-goods-card": "/components/ncu-goods-card/ncu-goods-card"
+  }
+}

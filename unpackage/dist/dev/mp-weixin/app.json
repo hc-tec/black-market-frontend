@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chat/index",
+    "pages/chat/chat",
+    "pages/forum/forum-details",
+    "pages/forum/tag",
+    "pages/mall/search",
+    "pages/mall/goods",
+    "pages/forum/hot-thread",
+    "pages/forum/hot-tags",
+    "pages/forum/all-tags",
+    "pages/chat/search",
+    "pages/mall/category",
+    "pages/chat/chatList",
+    "pages/chat/friends",
+    "pages/login/index",
+    "pages/mall/special-area",
+    "pages/shop/upload",
+    "pages/person/details/blackMarket",
+    "pages/forum/upload",
+    "pages/forum/index",
+    "pages/person/details/forum",
+    "pages/person/person-info",
+    "pages/person/settings",
+    "pages/mall/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

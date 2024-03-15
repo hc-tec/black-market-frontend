@@ -1,0 +1,55 @@
+.cu-list.data-v-75d5bac4 {
+  vertical-align: top;
+  position: relative;
+}
+.cu-list.data-v-75d5bac4::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: var(--texture);
+  position: absolute;
+  opacity: 1;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.chat {
+  position: relative;
+}
+.chat-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  background-image: url(http://neumorphic.cn/static/a82c9435-038a-49fe-817b-71adb9556585.png);
+  background-size: 162%;
+  background-repeat: no-repeat;
+  background-position: -79%;
+}
+.chat .swiper {
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+.chat .ncu-search-content {
+  padding: 0 0 10px 0;
+  margin: 0 10px;
+}
+.chat .ncu-search__input [class~=light-input] {
+  opacity: .6;
+  padding: 8px 40px !important;
+  background-color: var(--main-bg-color) !important;
+}
+.chat .cuIcon-search {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--main-light-color);
+}
+

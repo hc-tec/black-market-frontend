@@ -1,0 +1,21 @@
+.ncu-register.data-v-24dc7ac2 {
+  width: 90%;
+  height: 80vh;
+  margin: 10vh auto;
+  padding: 20% 30px 30% 30px;
+  background-color: var(--main-bg-color);
+  background-image: url(http://neumorphic.cn/static/50bf7e26-4f8b-4205-9f7c-60787297c668.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  border-radius: 6px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 600ms ease-out;
+  overflow: auto;
+}
+

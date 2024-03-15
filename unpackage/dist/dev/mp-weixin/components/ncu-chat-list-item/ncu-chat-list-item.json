@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-ripple-wrapper": "/components/ncu-ripple-wrapper/ncu-ripple-wrapper"
+  }
+}

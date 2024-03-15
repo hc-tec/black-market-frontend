@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ncu-tabbar": "/components/ncu-tabbar/ncu-tabbar",
+    "light-input": "/components/light-input/light-input",
+    "chat-list": "/pages/chat/chatList",
+    "friends": "/pages/chat/friends"
+  }
+}

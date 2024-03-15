@@ -1,0 +1,9 @@
+.all-tags.data-v-bb84dda8 {
+  overflow: hidden;
+  height: 100vh;
+}
+.all-tags-list.data-v-bb84dda8 {
+  background-color: var(--main-bg-color);
+  padding-top: 1em;
+}
+

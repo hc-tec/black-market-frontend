@@ -1,0 +1,14 @@
+.ncu-img-choose.data-v-53925d84 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+.ncu-img-choose .avatar.data-v-53925d84 {
+  width: 100%;
+  height: 100%;
+}
+

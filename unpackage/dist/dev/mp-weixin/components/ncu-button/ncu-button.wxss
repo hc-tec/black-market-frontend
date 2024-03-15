@@ -1,0 +1,13 @@
+.ncu-button.data-v-7f29d664 {
+  min-width: 50px;
+}
+.disabled.data-v-7f29d664 {
+  pointer-events: none;
+}
+.radius.data-v-7f29d664 {
+  border-radius: 5px;
+}
+.no-radius.data-v-7f29d664 {
+  border-radius: 0 !important;
+}
+

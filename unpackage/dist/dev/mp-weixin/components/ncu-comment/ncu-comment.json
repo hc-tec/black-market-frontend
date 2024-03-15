@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-title": "/components/ncu-title/ncu-title"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "ncu-nav": "/components/ncu-nav/ncu-nav",
+    "ncu-scroll-wrapper": "/components/ncu-scroll-wrapper/ncu-scroll-wrapper",
+    "ncu-goods": "/components/ncu-goods/ncu-goods",
+    "ncu-loading-part": "/components/ncu-loading-part/ncu-loading-part",
+    "ncu-no-data": "/components/ncu-no-data/ncu-no-data",
+    "ncu-modal": "/components/ncu-modal/ncu-modal",
+    "ncu-goods-details-card": "/components/ncu-goods-details-card/ncu-goods-details-card"
+  }
+}

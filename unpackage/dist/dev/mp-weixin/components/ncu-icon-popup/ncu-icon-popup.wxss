@@ -1,0 +1,11 @@
+.ncu-icon-popup {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.ncu-icon-popup-wrapper {
+  min-width: 25%;
+}
+

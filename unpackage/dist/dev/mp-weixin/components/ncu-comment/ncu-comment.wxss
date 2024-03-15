@@ -1,0 +1,14 @@
+.ncu-comment.data-v-1d3cc92c {
+  width: 100%;
+  margin: 0 auto 100px auto;
+  padding: 20px 0;
+  background-color: var(--main-bg-color);
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(18, 18, 18, 0.1);
+  position: relative;
+  z-index: 2;
+}
+.ncu-comment__items.data-v-1d3cc92c {
+  margin-top: 20px;
+}
+

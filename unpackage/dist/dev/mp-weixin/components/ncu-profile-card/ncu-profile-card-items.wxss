@@ -1,0 +1,38 @@
+.ncu-profile-card-items.data-v-18619752 {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  padding: 10px;
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--main-lighter-color);
+  opacity: .9;
+  font-size: .9em;
+}
+.ncu-profile-card-items-wrapper.data-v-18619752 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ncu-profile-card-items-content.data-v-18619752 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ncu-profile-card-items__icon.data-v-18619752 {
+  color: white;
+  font-size: 1em;
+  padding: .7em;
+  background-color: #edf7fd;
+  border-radius: 17px;
+  font-weight: bold;
+  background-image: var(--texture);
+  background-position: bottom;
+  margin-bottom: 3px;
+}
+.ncu-profile-card-items__count.data-v-18619752 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+}
+

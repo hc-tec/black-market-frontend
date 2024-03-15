@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-appreciate": "/components/ncu-appreciate/ncu-appreciate",
+    "ncu-comment-input": "/components/ncu-comment-foot/ncu-comment-input"
+  }
+}

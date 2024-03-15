@@ -1,0 +1,29 @@
+.ncu-comment-item.data-v-35ad2ec4 {
+  position: relative;
+}
+.ncu-comment-item__avatar.data-v-35ad2ec4 {
+  top: 0;
+  left: -45px;
+  position: absolute;
+}
+.ncu-comment-item__content.data-v-35ad2ec4 {
+  margin: 7px 0 10px 0;
+  font-size: .8rem;
+  white-space: pre-line;
+}
+.ncu-appreciate.data-v-35ad2ec4 {
+  position: absolute;
+  top: -30%;
+  right: 0;
+}
+.is-parent.data-v-35ad2ec4 {
+  margin-left: 50px;
+  padding: 5px 0;
+}
+.is-child.data-v-35ad2ec4 {
+  margin-left: 60px;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+  padding: 4px 0;
+}
+

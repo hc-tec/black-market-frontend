@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-emoji": "/components/ncu-emoji/ncu-emoji",
+    "ncu-chat-operation": "/components/ncu-chat-input/ncu-chat-operation"
+  }
+}

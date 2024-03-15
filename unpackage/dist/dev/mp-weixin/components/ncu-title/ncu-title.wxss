@@ -1,0 +1,13 @@
+.ncu-title.data-v-1efebbdc {
+  font-size: 14px;
+  color: var(--main-light-color);
+}
+.ncu-title-type--bgColor.data-v-1efebbdc {
+  padding-left: 20px;
+  background-color: var(--main-lighter-color);
+}
+.center.data-v-1efebbdc {
+  width: 100%;
+  text-align: center;
+}
+

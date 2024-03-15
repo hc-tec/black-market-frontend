@@ -1,0 +1,16 @@
+.ncu-comment-item__comment-name.data-v-39d7b224 {
+  font-size: .8rem;
+  font-weight: 600;
+}
+.ncu-comment-item__reply.data-v-39d7b224 {
+  margin: 0 5px;
+}
+.ncu-comment-item__reply-name.data-v-39d7b224 {
+  font-size: .8rem;
+  font-weight: 600;
+}
+.ncu-comment-item__school-zone.data-v-39d7b224 {
+  font-size: .7rem;
+  margin-top: 5px;
+}
+

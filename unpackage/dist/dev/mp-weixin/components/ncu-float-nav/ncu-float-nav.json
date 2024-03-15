@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-float-nav-item": "/components/ncu-float-nav/ncu-float-nav-item"
+  }
+}

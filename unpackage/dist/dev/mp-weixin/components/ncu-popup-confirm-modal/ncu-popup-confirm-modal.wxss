@@ -1,0 +1,17 @@
+.ncu-popup-confirm-modal__btn-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.ncu-popup-confirm-modal__btn {
+  border-radius: 5px;
+  overflow: hidden;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 5px;
+}
+.ncu-popup-confirm-modal__content {
+  max-height: 50vh;
+  overflow: auto;
+}
+

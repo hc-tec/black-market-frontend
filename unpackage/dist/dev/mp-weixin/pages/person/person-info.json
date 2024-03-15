@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "ncu-settings-item": "/components/ncu-settings-item/ncu-settings-item",
+    "ncu-avatar": "/components/ncu-avatar/ncu-avatar",
+    "ncu-icon-popup": "/components/ncu-icon-popup/ncu-icon-popup",
+    "ncu-popup-confirm-modal": "/components/ncu-popup-confirm-modal/ncu-popup-confirm-modal",
+    "light-input": "/components/light-input/light-input",
+    "v-valid-input": "/components/v-valid-input/v-valid-input",
+    "ncu-popup-select": "/components/ncu-popup-select/ncu-popup-select",
+    "ncu-message": "/components/ncu-message/ncu-message",
+    "ncu-loading": "/components/ncu-loading/ncu-loading"
+  }
+}

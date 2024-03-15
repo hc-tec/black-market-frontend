@@ -1,0 +1,88 @@
+@-webkit-keyframes rotate-data-v-29ed8b48 {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes rotate-data-v-29ed8b48 {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@-webkit-keyframes rotate2-data-v-29ed8b48 {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: var(--loading-elem-color);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+}
+}
+@keyframes rotate2-data-v-29ed8b48 {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: var(--loading-elem-color);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+}
+}
+.ncu-global-loader__content.data-v-29ed8b48 {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+  -webkit-animation: rotate-data-v-29ed8b48 linear 3.5s infinite;
+          animation: rotate-data-v-29ed8b48 linear 3.5s infinite;
+  -webkit-animation: rotate2-data-v-29ed8b48 4s infinite linear;
+          animation: rotate2-data-v-29ed8b48 4s infinite linear;
+}
+.ncu-global-loader__content ._div.data-v-29ed8b48 {
+  height: 100%;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+  -webkit-animation: rotate-data-v-29ed8b48 linear 3.5s infinite;
+          animation: rotate-data-v-29ed8b48 linear 3.5s infinite;
+  -webkit-animation: rotate2-data-v-29ed8b48 4s infinite linear;
+          animation: rotate2-data-v-29ed8b48 4s infinite linear;
+}
+

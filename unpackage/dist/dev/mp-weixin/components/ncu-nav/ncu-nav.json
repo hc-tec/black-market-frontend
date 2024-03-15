@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ncu-popup-option": "/components/ncu-popup-option/ncu-popup-option"
+  },
+  "component": true
+}

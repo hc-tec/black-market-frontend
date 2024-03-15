@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-avatar": "/components/ncu-avatar/ncu-avatar",
+    "ncu-category-item": "/components/ncu-category-item/ncu-category-item",
+    "ncu-profile-card-item": "/components/ncu-profile-card/ncu-profile-card-items"
+  }
+}

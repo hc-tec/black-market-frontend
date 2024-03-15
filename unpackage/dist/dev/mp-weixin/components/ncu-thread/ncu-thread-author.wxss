@@ -1,0 +1,17 @@
+.ncu-thread__author-info.data-v-44f54f78 {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  display: flex;
+}
+.ncu-thread__author-info__details.data-v-44f54f78 {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: .8rem;
+}
+.ncu-thread__author-info__school-zone.data-v-44f54f78 {
+  color: var(--main-light-color);
+}
+

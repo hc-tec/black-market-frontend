@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-back-arrow": "/components/ncu-back-arrow/ncu-back-arrow"
+  }
+}

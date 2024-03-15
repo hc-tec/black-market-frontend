@@ -1,0 +1,67 @@
+.ncu-comment-input.data-v-21fd0024 {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1024;
+  box-shadow: 0 -1rpx 6rpx -4rpx rgba(0, 0, 0, 0.1);
+  background-color: var(--main-bg-color);
+  transition: max-height .3s;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.ncu-comment-input__fake.data-v-21fd0024 {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-animation: move-up-data-v-21fd0024 .5 forwards;
+          animation: move-up-data-v-21fd0024 .5 forwards;
+}
+@-webkit-keyframes move-up-data-v-21fd0024 {
+from {
+    bottom: 100px;
+}
+to {
+    bottom: 0;
+}
+}
+@keyframes move-up-data-v-21fd0024 {
+from {
+    bottom: 100px;
+}
+to {
+    bottom: 0;
+}
+}
+.ncu-comment-input.focus.data-v-21fd0024 {
+  max-height: 40vh;
+}
+.ncu-comment-input__appreciate.data-v-21fd0024 {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  -webkit-transform: translate(-15px, -50%);
+          transform: translate(-15px, -50%);
+}
+.ncu-comment-input__comment.data-v-21fd0024 {
+  margin-left: 65px;
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.ncu-comment-input__comment .input.data-v-21fd0024 {
+  background-color: var(--main-lighter-color);
+  margin-right: 10px;
+  padding: 10px;
+  height: 34px;
+  max-height: 30vh;
+  width: calc(100% - 19px);
+  border-radius: 5px;
+  transition: height .3s;
+}
+.ncu-comment-input__comment [class*="cuIcon-"].data-v-21fd0024 {
+  font-size: 1.3rem;
+}
+

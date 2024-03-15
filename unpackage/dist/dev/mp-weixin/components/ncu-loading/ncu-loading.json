@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-loading-elem": "/components/ncu-loading/ncu-loading-elem",
+    "ncu-loading-bounce-stick": "/components/ncu-loading/ncu-loading-bounce-stick",
+    "ncu-loading-bounce-ball": "/components/ncu-loading/ncu-loading-bounce-ball",
+    "ncu-loading-rect": "/components/ncu-loading/ncu-loading-rect"
+  }
+}

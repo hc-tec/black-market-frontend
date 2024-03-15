@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ncu-header-wrapper": "/components/ncu-header-wrapper/ncu-header-wrapper",
+    "ncu-goods": "/components/ncu-goods/ncu-goods",
+    "ncu-loading-part": "/components/ncu-loading-part/ncu-loading-part",
+    "ncu-no-data": "/components/ncu-no-data/ncu-no-data"
+  }
+}

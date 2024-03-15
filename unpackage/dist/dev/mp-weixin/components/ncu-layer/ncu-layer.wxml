@@ -1,0 +1,1 @@
+<block wx:if="{{true_open}}"><view class="{{['ncu-container','_div','data-v-bca654e4',(open)?'active':'']}}"><view data-event-opts="{{[['tap',[['layerClick',['$event']]]]]}}" class="ncu-layer _div data-v-bca654e4" style="{{'transition:'+('opacity '+during/1000+'s linear')+';'}}" bindtap="__e"></view><slot></slot></view></block>

@@ -1,0 +1,56 @@
+.cu-bar {
+  z-index: var(--header-z-index);
+  background-color: var(--main-bg-color);
+  background-position: bottom;
+}
+.content {
+  font-weight: 700;
+  margin: 10px 0;
+  width: 100% !important;
+  pointer-events: auto;
+}
+.bar-left {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+.back {
+  z-index: 1;
+}
+.bg-image {
+  position: relative;
+}
+.bg-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(18px);
+          filter: blur(18px);
+  background-image: url(http://neumorphic.cn/static/e4a42d15-b8c1-4fb5-ab55-362689d3d364.svg);
+  transition: background-position .3s;
+  z-index: -1;
+}
+.bg-image.move::after {
+  -webkit-animation: move 20s infinite alternate;
+          animation: move 20s infinite alternate;
+}
+@-webkit-keyframes move {
+from {
+    background-position: 0% 0;
+}
+to {
+    background-position: 100% 60%;
+}
+}
+@keyframes move {
+from {
+    background-position: 0% 0;
+}
+to {
+    background-position: 100% 60%;
+}
+}
+

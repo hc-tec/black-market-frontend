@@ -1,0 +1,1 @@
+<view class="ncu-float-btn _div data-v-5c25a7c2" style="{{'right:'+(right+'em')+';'+('bottom:'+(bottom+'em')+';')}}"><button class="cu-btn data-v-5c25a7c2" hover-class="hover-opacity" hover-stay-time="100" data-event-opts="{{[['tap',[['$emit',['click']]]]]}}" bindtap="__e"><slot></slot></button></view>

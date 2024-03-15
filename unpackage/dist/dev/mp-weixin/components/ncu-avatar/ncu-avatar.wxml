@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['$emit',['click',['o',['src',src],['size',size]]]]]]]}}" class="ncu-avatar _div data-v-0623f804" style="{{$root.s0}}" catchtap="__e"><block wx:if="{{isAuthor}}"><view class="cuIcon-lightfill author-light _i data-v-0623f804"></view></block><image class="ncu-avatar__img data-v-0623f804" mode="aspectFill" src="{{src||avatar}}"></image></view>

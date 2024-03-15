@@ -1,0 +1,134 @@
+.ncu-global-loader.data-v-641970a4 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 2s ease-in;
+  z-index: var(--loading-mask);
+}
+.ncu-global-loader__wrapper.data-v-641970a4 {
+  background-color: white;
+  padding: 40rpx;
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: var(--loading-content);
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.ncu-global-loader__text.data-v-641970a4 {
+  margin-top: 40rpx;
+  display: block;
+  text-align: center;
+}
+.ncu-global-loader__mask.data-v-641970a4 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--loading-mask);
+}
+.slide-scale-in.data-v-641970a4 {
+  -webkit-animation: slide-scale-in-data-v-641970a4 2s cubic-bezier(0.16, 1, 0.3, 1);
+          animation: slide-scale-in-data-v-641970a4 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slide-scale-out.data-v-641970a4 {
+  -webkit-animation: slide-scale-out-data-v-641970a4 2s cubic-bezier(0.16, 1, 0.3, 1);
+          animation: slide-scale-out-data-v-641970a4 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@-webkit-keyframes slide-scale-in-data-v-641970a4 {
+0% {
+    width: 60px;
+    height: 60px;
+    left: 150%;
+}
+50% {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+}
+75% {
+    width: 60px;
+    height: 40%;
+    left: 50%;
+}
+100% {
+    width: 80%;
+    height: auto;
+    left: 50%;
+}
+}
+@keyframes slide-scale-in-data-v-641970a4 {
+0% {
+    width: 60px;
+    height: 60px;
+    left: 150%;
+}
+50% {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+}
+75% {
+    width: 60px;
+    height: 40%;
+    left: 50%;
+}
+100% {
+    width: 80%;
+    height: auto;
+    left: 50%;
+}
+}
+@-webkit-keyframes slide-scale-out-data-v-641970a4 {
+0% {
+    width: 80%;
+    height: auto;
+    left: 50%;
+}
+50% {
+    width: 60px;
+    height: 40%;
+    left: 50%;
+}
+75% {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+}
+100% {
+    width: 60px;
+    height: 60px;
+    left: 150%;
+}
+}
+@keyframes slide-scale-out-data-v-641970a4 {
+0% {
+    width: 80%;
+    height: auto;
+    left: 50%;
+}
+50% {
+    width: 60px;
+    height: 40%;
+    left: 50%;
+}
+75% {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+}
+100% {
+    width: 60px;
+    height: 60px;
+    left: 150%;
+}
+}
+

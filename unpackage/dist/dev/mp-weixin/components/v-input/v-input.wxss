@@ -1,0 +1,37 @@
+.v-input-wrapper.data-v-0241b16c {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.v-input.data-v-0241b16c {
+  border: 1px solid #b0aaaa1a;
+  height: auto;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #c4c3ca;
+  background-color: white;
+  transition: all 200ms linear;
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.06);
+  text-align: left;
+}
+.v-input__icon.data-v-0241b16c {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-size: 24px;
+  text-align: left;
+  color: #ffeba7;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all 200ms linear;
+}
+.v-textarea.data-v-0241b16c {
+  height: 70px;
+}
+

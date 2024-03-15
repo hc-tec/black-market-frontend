@@ -1,0 +1,31 @@
+.goods-search__history {
+  padding: 0 10%;
+  padding-bottom: 20%;
+  background-color: var(--main-bg-color);
+}
+.goods-search .ncu-search-content {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  bottom: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: bottom .2s;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--main-color);
+}
+.goods-search .ncu-search__input [class~=light-input] {
+  padding: 15px 40px !important;
+  background-color: var(--main-bg-color) !important;
+}
+.goods-search .cuIcon-search {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--main-light-color);
+}
+

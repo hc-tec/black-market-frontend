@@ -1,0 +1,31 @@
+.ncu-tag-item-light.data-v-369da144 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+.ncu-tag-item-light__tag.data-v-369da144 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.ncu-tag-item-light-stat.data-v-369da144 {
+  color: var(--main-light-color);
+  font-size: .9em;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.ncu-tag-item-light__focus-num.data-v-369da144, .ncu-tag-item-light__thread-num.data-v-369da144 {
+  margin: 0 5px 0 0;
+}
+.ncu-tag-item-light .arrow.data-v-369da144 {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--main-light-color);
+}
+

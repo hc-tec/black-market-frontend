@@ -1,0 +1,20 @@
+.ncu-mall-goods.data-v-654f6258 {
+  margin: 2rem 0 1rem 0;
+  padding: 0 1%;
+  display: flex;
+  justify-content: space-evenly;
+  align-item: flex-start;
+}
+.ncu-mall-goods__left.data-v-654f6258, .ncu-mall-goods__right.data-v-654f6258 {
+  width: 96%;
+  margin: 0 0% 0 5%;
+}
+.ncu-mall-goods .goods-wrapper.data-v-654f6258 {
+  width: 46%;
+  float: left;
+  margin-right: 4%;
+}
+.ncu-mall-goods .goods-wrapper.data-v-654f6258:first-child {
+  float: left;
+}
+

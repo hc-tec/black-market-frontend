@@ -1,0 +1,20 @@
+.ncu-scroll-items-wrapper {
+  vertical-align: top;
+  font-size: 40px;
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.mall-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .8em .6em 0;
+}
+.nav-bar-left {
+  font-size: .9rem;
+  color: var(--main-light-color);
+  font-weight: 400;
+}
+.nav-bar-left [class^=cuIcon] {
+  font-size: 1rem;
+}
+

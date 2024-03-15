@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ncu-tabbar": "/components/ncu-tabbar/ncu-tabbar",
+    "mall": "/pages/mall/index",
+    "shop": "/pages/shop/index",
+    "forum": "/pages/forum/index",
+    "person": "/pages/person/index"
+  }
+}

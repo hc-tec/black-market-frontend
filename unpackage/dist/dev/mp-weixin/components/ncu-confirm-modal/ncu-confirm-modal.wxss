@@ -1,0 +1,24 @@
+.ncu-confirm-modal.data-v-27e4cbec {
+  position: relative;
+}
+.ncu-confirm-modal__title.data-v-27e4cbec, .ncu-confirm-modal__message.data-v-27e4cbec {
+  padding: 0 50px;
+}
+.ncu-confirm-modal__title.data-v-27e4cbec {
+  font-weight: bold;
+  text-align: center;
+}
+.ncu-confirm-modal__message.data-v-27e4cbec {
+  margin: 15px 0;
+  font-size: .9rem;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.ncu-confirm-modal__btn-group.data-v-27e4cbec {
+  display: flex;
+}
+.ncu-confirm-modal__btn.data-v-27e4cbec {
+  width: 50%;
+  padding: 0;
+}
+

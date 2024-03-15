@@ -1,0 +1,17 @@
+.cu-list.data-v-75d5bac4 {
+  vertical-align: top;
+  position: relative;
+}
+.cu-list.data-v-75d5bac4::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: var(--texture);
+  position: absolute;
+  opacity: 1;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+

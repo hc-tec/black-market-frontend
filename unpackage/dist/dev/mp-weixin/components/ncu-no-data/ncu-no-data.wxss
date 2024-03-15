@@ -1,0 +1,9 @@
+.no-data.data-v-22215598 {
+  text-align: center;
+  color: var(--main-light-color);
+  margin: 1rem 0;
+}
+[class*=cuIcon].data-v-22215598 {
+  font-size: 6em;
+}
+

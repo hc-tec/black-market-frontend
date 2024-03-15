@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-avatar": "/components/ncu-avatar/ncu-avatar"
+  }
+}

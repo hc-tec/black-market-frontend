@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-input": "/components/v-input/v-input",
+    "light-input": "/components/light-input/light-input"
+  }
+}

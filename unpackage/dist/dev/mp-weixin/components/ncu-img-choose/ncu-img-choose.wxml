@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['ChooseAvatar',['$event']]]]]}}" class="{{['ncu-img-choose','_div','data-v-53925d84',lineType]}}" bindtap="__e"><block wx:if="{{src}}"><image class="avatar data-v-53925d84" src="{{src}}" mode="aspectFill"></image></block><block wx:else><view class="cuIcon-cameraadd _p data-v-53925d84"></view></block></view>

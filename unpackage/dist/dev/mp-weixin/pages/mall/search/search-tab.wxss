@@ -1,0 +1,12 @@
+.search-tab.data-v-37ff9196 {
+  margin-bottom: 1rem;
+  color: var(--main-light-color);
+}
+.search-tab__title.data-v-37ff9196 {
+  margin-bottom: 10px;
+}
+.search-tab .icon.data-v-37ff9196 {
+  margin-right: 5px;
+  font-size: .9rem;
+}
+

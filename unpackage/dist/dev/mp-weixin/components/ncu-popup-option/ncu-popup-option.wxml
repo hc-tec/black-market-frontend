@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['$emit',['click','$0'],['index']]]]]}}" class="{{['ncu-popup-option','animate-move-in','_div','data-v-fc27f138',active?'active':'','ncu-popup-option-size--'+size]}}" style="{{(getStyle)}}" bindtap="__e"><slot></slot></view>

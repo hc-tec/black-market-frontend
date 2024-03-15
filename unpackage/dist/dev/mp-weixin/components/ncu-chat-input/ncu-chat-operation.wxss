@@ -1,0 +1,9 @@
+.ncu-chat-operation {
+  display: flex;
+  justify-content: baseline;
+  flex-wrap: wrap;
+}
+.ncu-chat-operation [class*=ncu-icon-wrapper__icon] {
+  background-color: var(--main-bg-color);
+}
+

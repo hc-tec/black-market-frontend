@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-appreciate": "/components/ncu-appreciate/ncu-appreciate",
+    "ncu-thread-author-info": "/components/ncu-thread/ncu-thread-author",
+    "ncu-thread-content-main": "/components/ncu-thread/ncu-thread-content-main"
+  }
+}

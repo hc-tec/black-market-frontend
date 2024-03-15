@@ -1,0 +1,1 @@
+<view class="{{['ncu-title','cu-bar','_div','data-v-1efebbdc','ncu-title-type--'+type]}}"><view class="{{['_div','data-v-1efebbdc',center?'center':'']}}"><block wx:if="{{needIcon}}"><label class="{{['cuIcon-titles','data-v-1efebbdc','text-'+iconColor]}}"></label></block><label class="text-bold data-v-1efebbdc">{{''+title+''}}</label></view></view>

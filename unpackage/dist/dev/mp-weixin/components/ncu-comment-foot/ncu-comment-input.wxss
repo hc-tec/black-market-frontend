@@ -1,0 +1,44 @@
+.ncu-comment-input.data-v-a6381df8 {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: fit-content;
+  box-shadow: 0 -1rpx 6rpx -4rpx rgba(0, 0, 0, 0.1);
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  transition: max-height .3s;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+.ncu-comment-input .input.data-v-a6381df8 {
+  line-height: 1.75;
+  height: 5em;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 15px 25px 0 0;
+  max-height: calc(100vh - 300px);
+  transition: height .3s;
+  color: var(--main-color);
+}
+.ncu-comment-input .emoji.data-v-a6381df8 {
+  font-size: 2em;
+}
+.ncu-comment-input-func.data-v-a6381df8 {
+  padding: 5px 0;
+}
+.ncu-comment-input-operation.data-v-a6381df8 {
+  border-top: 2px solid var(--main-lighter-color);
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.ncu-comment-input .full-btn.data-v-a6381df8 {
+  position: absolute;
+  top: 15px;
+  right: 4px;
+  font-size: 1.8em;
+  z-index: 10;
+}
+

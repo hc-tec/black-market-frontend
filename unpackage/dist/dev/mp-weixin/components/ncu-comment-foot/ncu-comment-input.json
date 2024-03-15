@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ncu-popup-modal": "/components/ncu-popup-modal/ncu-popup-modal",
+    "ncu-radius-btn": "/components/ncu-radius-btn/ncu-radius-btn",
+    "ncu-emoji": "/components/ncu-emoji/ncu-emoji"
+  },
+  "component": true
+}

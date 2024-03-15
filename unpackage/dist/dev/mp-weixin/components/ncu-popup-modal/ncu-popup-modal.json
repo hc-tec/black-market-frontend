@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-layer": "/components/ncu-layer/ncu-layer"
+  }
+}

@@ -1,0 +1,22 @@
+.ncu-container.data-v-bca654e4 {
+  z-index: var(--layer-z-index);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.ncu-layer.data-v-bca654e4 {
+  background: var(--layer-bg-color);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.active .ncu-layer.data-v-bca654e4 {
+  opacity: 1;
+}
+

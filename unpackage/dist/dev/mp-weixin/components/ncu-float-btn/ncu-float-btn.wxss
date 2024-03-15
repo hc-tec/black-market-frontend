@@ -1,0 +1,14 @@
+.ncu-float-btn.data-v-5c25a7c2 {
+  position: fixed;
+}
+.ncu-float-btn .cu-btn.data-v-5c25a7c2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: box-shadow .2s;
+  color: var(--nav-btn-color);
+  background-color: var(--nav-btn-bg-color);
+  box-shadow: var(--main-shadow);
+  font-size: 1.2em;
+}
+

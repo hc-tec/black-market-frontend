@@ -1,0 +1,34 @@
+.ncu-settings-item.data-v-4960c3e6 {
+  position: relative;
+  padding: 25px 30px;
+  background-color: var(--main-bg-color);
+}
+.ncu-settings-item__label.data-v-4960c3e6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.ncu-settings-item-right.data-v-4960c3e6 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.ncu-settings-item__content.data-v-4960c3e6 {
+  display: -webkit-box;
+  font-size: 14px;
+  color: var(--main-light-color);
+  font-weight: bold;
+  max-width: 120px;
+  padding-right: 10px;
+}
+.ncu-settings-item__arrow.data-v-4960c3e6 {
+  margin-left: 20px;
+  width: 3px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: var(--setting-item-bar-color);
+}
+

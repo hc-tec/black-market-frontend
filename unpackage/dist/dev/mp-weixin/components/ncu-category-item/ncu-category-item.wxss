@@ -1,0 +1,29 @@
+.ncu-category-item.data-v-a7f450a0 {
+  opacity: .9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: .8em 1.2em;
+  margin: 0 auto;
+  margin-bottom: .6em;
+  border-radius: 10px;
+  background-color: var(--main-lighter-color);
+}
+.ncu-category-item__icon.data-v-a7f450a0 {
+  color: white;
+  font-size: 1.4em;
+  padding: .5em;
+  margin-right: 20px;
+  background-color: #edf7fd;
+  border-radius: 17px;
+  font-weight: bold;
+  background-image: var(--texture);
+  background-position: bottom;
+}
+.ncu-category-item__arrow.data-v-a7f450a0 {
+  position: absolute;
+  right: 10px;
+  color: var(--main-light-color);
+}
+

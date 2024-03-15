@@ -1,0 +1,19 @@
+.ncu-icon-wrapper.data-v-25f9ba84 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+}
+.ncu-icon-wrapper__icon.data-v-25f9ba84 {
+  background-color: var(--main-lighter-color);
+  padding: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.ncu-icon-wrapper__label.data-v-25f9ba84 {
+  font-size: 10px;
+}
+

@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "ncu-button": "/components/ncu-button/ncu-button",
+    "ncu-scroll-wrapper-v2": "/components/ncu-scroll-wrapper-v2/ncu-scroll-wrapper-v2",
+    "ncu-category-item": "/components/ncu-category-item/ncu-category-item",
+    "ncu-threads": "/components/ncu-threads/ncu-threads",
+    "ncu-thread": "/components/ncu-thread/ncu-thread",
+    "ncu-loading-part": "/components/ncu-loading-part/ncu-loading-part",
+    "ncu-no-data": "/components/ncu-no-data/ncu-no-data",
+    "ncu-popup-select": "/components/ncu-popup-select/ncu-popup-select"
+  }
+}

@@ -1,0 +1,12 @@
+.screen-swiper.data-v-33c8e2b8 {
+  margin: 0 auto;
+  min-height: auto;
+}
+.radius.data-v-33c8e2b8 {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.radius .image.data-v-33c8e2b8 {
+  border-radius: 4px;
+}
+

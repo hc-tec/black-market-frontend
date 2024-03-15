@@ -1,0 +1,21 @@
+.ncu-special-goods-area.data-v-6c109013 {
+  position: relative;
+  top: -90px;
+  height: calc(96vh - 90px);
+}
+.ncu-special-goods-area__image-header.data-v-6c109013 {
+  width: 100%;
+  height: 120px;
+  background-image: var(--texture);
+  background-position: left;
+}
+.ncu-special-goods-area-main.data-v-6c109013 {
+  background-color: var(--main-bg-color);
+  height: 100%;
+  position: relative;
+  top: -10px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  overflow: hidden;
+}
+

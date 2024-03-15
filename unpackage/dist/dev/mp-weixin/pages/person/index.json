@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "ncu-scroll-wrapper-v2": "/components/ncu-scroll-wrapper-v2/ncu-scroll-wrapper-v2",
+    "ncu-profile-card": "/components/ncu-profile-card/ncu-profile-card",
+    "ncu-confirm-modal": "/components/ncu-confirm-modal/ncu-confirm-modal",
+    "ncu-message": "/components/ncu-message/ncu-message"
+  }
+}

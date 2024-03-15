@@ -1,0 +1,71 @@
+.ncu-goods-card {
+  background-color: transparent;
+  color: var(--main-light-color);
+  position: relative;
+}
+.ncu-goods-card__img {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  transition: -webkit-filter 2s;
+  transition: filter 2s;
+  transition: filter 2s, -webkit-filter 2s;
+  border-radius: 10px;
+  overflow: visible;
+  max-height: 180px;
+  min-height: 100px;
+}
+.ncu-goods-card__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ncu-goods-card--details {
+  margin-top: 10px;
+  padding: 0 10px 10px 10px;
+}
+.ncu-goods-card--details__title {
+  font-size: .8rem;
+  margin-bottom: 5px;
+}
+.ncu-goods-card--details__price {
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  font-size: 1.2rem;
+  color: #ff5000;
+  margin-bottom: 5px;
+}
+.ncu-goods-card--details__price .money-icon {
+  margin-right: 5px;
+  position: relative;
+  font-size: 0.7em;
+}
+.author-info__location {
+  margin-top: 5px;
+  font-size: .7rem;
+}
+.author-info__avatar {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+.author-info__avatar-prefix {
+  margin-right: 5px;
+}
+.is-sold {
+  position: absolute;
+  padding: 1px;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background: var(--green);
+  z-index: 10;
+  border-radius: 50%;
+}
+.no-blur {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+

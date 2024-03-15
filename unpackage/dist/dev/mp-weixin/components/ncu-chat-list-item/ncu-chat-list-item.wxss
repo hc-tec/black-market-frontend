@@ -1,0 +1,16 @@
+.ncu-chat-list-item.data-v-00da9c84 {
+  color: var(--main-light-color);
+  z-index: 10;
+}
+.cu-list.menu-avatar > .cu-item.data-v-00da9c84:after,
+.cu-list.menu > .cu-item.data-v-00da9c84:after {
+  border: none;
+}
+.cu-avatar.data-v-00da9c84,
+.cu-list.menu-avatar > .cu-item.data-v-00da9c84 {
+  background-color: var(--main-bg-color-alpha);
+}
+.chat-user_name.data-v-00da9c84 {
+  color: var(--main-color);
+}
+

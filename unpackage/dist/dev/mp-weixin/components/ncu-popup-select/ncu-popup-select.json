@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-popup-confirm-modal": "/components/ncu-popup-confirm-modal/ncu-popup-confirm-modal",
+    "ncu-popup-option": "/components/ncu-popup-option/ncu-popup-option"
+  }
+}

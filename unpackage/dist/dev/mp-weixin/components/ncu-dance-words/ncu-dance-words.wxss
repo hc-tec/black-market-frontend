@@ -1,0 +1,100 @@
+.ncu-dance-words.data-v-28c84d4a {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.ncu-dance-words__wrapper.data-v-28c84d4a {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  text-align: center;
+  -webkit-animation: words-in-data-v-28c84d4a 4s ease;
+          animation: words-in-data-v-28c84d4a 4s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+.ncu-dance-words__layer.data-v-28c84d4a {
+  position: absolute;
+  width: 50%;
+  height: calc(100% + 10px);
+  left: -100%;
+  top: 0;
+  z-index: -1;
+  -webkit-animation: layer-move-data-v-28c84d4a 1s forwards;
+          animation: layer-move-data-v-28c84d4a 1s forwards;
+}
+@-webkit-keyframes words-in-data-v-28c84d4a {
+0% {
+    -webkit-transform: translate(-50px, -50px);
+            transform: translate(-50px, -50px);
+    opacity: 1;
+    width: 40px;
+}
+25% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+}
+75% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+    width: 40px;
+}
+100% {
+    width: auto;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+}
+}
+@keyframes words-in-data-v-28c84d4a {
+0% {
+    -webkit-transform: translate(-50px, -50px);
+            transform: translate(-50px, -50px);
+    opacity: 1;
+    width: 40px;
+}
+25% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+}
+75% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+    width: 40px;
+}
+100% {
+    width: auto;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+}
+}
+@-webkit-keyframes layer-move-data-v-28c84d4a {
+0% {
+    left: -50%;
+}
+50% {
+    left: 0;
+}
+100% {
+    left: 100%;
+}
+}
+@keyframes layer-move-data-v-28c84d4a {
+0% {
+    left: -50%;
+}
+50% {
+    left: 0;
+}
+100% {
+    left: 100%;
+}
+}
+

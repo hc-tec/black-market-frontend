@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-ripple-wrapper": "/components/ncu-ripple-wrapper/ncu-ripple-wrapper",
+    "ncu-profile-card-tab": "/components/ncu-profile-card/ncu-profile-card-tab"
+  }
+}

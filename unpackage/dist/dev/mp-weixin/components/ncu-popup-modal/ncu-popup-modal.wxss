@@ -1,0 +1,31 @@
+.ncu-popup-modal.data-v-69946ac4 {
+  width: 100%;
+  position: fixed;
+  padding: 30px;
+  background-color: var(--main-bg-color);
+  transition: top .3s;
+  height: -webkit-fit-content;
+  height: fit-content;
+}
+.ncu-popup-modal-direction--bottom.data-v-69946ac4 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ncu-popup-modal-direction--top.data-v-69946ac4 {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.ncu-popup-modal__title.data-v-69946ac4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.ncu-popup-modal__content.data-v-69946ac4 {
+  max-height: 80vh;
+  overflow: auto;
+  height: -webkit-fit-content;
+  height: fit-content;
+}
+

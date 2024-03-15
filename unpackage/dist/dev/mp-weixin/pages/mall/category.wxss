@@ -1,0 +1,7 @@
+.goods-category-list.data-v-623d5320 {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 5% 0;
+  margin: 0 auto;
+}
+

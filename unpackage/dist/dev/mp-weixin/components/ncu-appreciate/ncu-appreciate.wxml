@@ -1,0 +1,1 @@
+<view class="ncu-appreciate-wrapper _div data-v-43fc50a4"><view class="{{['ncu-appreciate','_div','data-v-43fc50a4',active?'is-active':'']}}" hover-class="scale-out" hover-stay-time="{{100}}" data-event-opts="{{[['tap',[['$emit',['click',!active]]]]]}}" catchtap="__e"></view><label class="ncu-appreciate__num _span data-v-43fc50a4">{{''+(num||0)+''}}</label></view>

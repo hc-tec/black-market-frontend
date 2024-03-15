@@ -1,0 +1,1 @@
+<view class="ncu-icon-wrapper _div data-v-25f9ba84" hover-class="hover-opacity" hover-stay-time="100" data-event-opts="{{[['tap',[['$emit',['click']]]]]}}" bindtap="__e"><view class="{{['ncu-icon-wrapper__icon','_div','data-v-25f9ba84',icon]}}"></view><view class="ncu-icon-wrapper__label _div data-v-25f9ba84">{{''+label+''}}</view></view>

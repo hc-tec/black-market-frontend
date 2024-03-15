@@ -1,0 +1,1 @@
+<view class="ncu-goods-details-tab _div"><label class="ncu-goods-details-tab__title _span">{{''+title+''}}</label><slot></slot></view>

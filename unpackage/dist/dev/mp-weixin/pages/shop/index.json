@@ -1,0 +1,17 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "ncu-float-nav": "/components/ncu-float-nav/ncu-float-nav",
+    "ncu-scroll-wrapper-v2": "/components/ncu-scroll-wrapper-v2/ncu-scroll-wrapper-v2",
+    "ncu-goods": "/components/ncu-goods/ncu-goods",
+    "ncu-loading-part": "/components/ncu-loading-part/ncu-loading-part",
+    "ncu-no-data": "/components/ncu-no-data/ncu-no-data",
+    "ncu-modal": "/components/ncu-modal/ncu-modal",
+    "ncu-goods-details-card": "/components/ncu-goods-details-card/ncu-goods-details-card",
+    "ncu-float-btn": "/components/ncu-float-btn/ncu-float-btn",
+    "ncu-icon-popup": "/components/ncu-icon-popup/ncu-icon-popup",
+    "ncu-confirm-modal": "/components/ncu-confirm-modal/ncu-confirm-modal",
+    "ncu-message": "/components/ncu-message/ncu-message"
+  }
+}

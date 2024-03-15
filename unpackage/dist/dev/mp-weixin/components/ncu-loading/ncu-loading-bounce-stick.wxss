@@ -1,0 +1,90 @@
+.ncu-loading-bounce-stick.data-v-6686d478 {
+  border-radius: 50%;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+.ncu-loading-bounce-stick.data-v-6686d478:after, .ncu-loading-bounce-stick.data-v-6686d478:before {
+  position: absolute;
+  content: "";
+}
+.ncu-loading-bounce-stick.data-v-6686d478:after {
+  height: 10px;
+  width: 100px;
+  background-color: #FFCD57;
+  border-radius: 5px;
+  top: 110px;
+  left: 40px;
+  -webkit-animation: loader-swing-data-v-6686d478 0.8s ease-in-out infinite;
+          animation: loader-swing-data-v-6686d478 0.8s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.ncu-loading-bounce-stick.data-v-6686d478:before {
+  height: 20px;
+  width: 20px;
+  background-color: #FFCD57;
+  border-radius: 50%;
+  top: 30px;
+  left: 78px;
+  -webkit-animation: loader-bounce-data-v-6686d478 0.4s ease-in-out infinite;
+          animation: loader-bounce-data-v-6686d478 0.4s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes loader-bounce-data-v-6686d478 {
+0% {
+    height: 24px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+}
+75% {
+    height: 20px;
+    width: 20px;
+}
+100% {
+    height: 10px;
+    width: 24px;
+    -webkit-transform: translateY(74px);
+            transform: translateY(74px);
+}
+}
+@keyframes loader-bounce-data-v-6686d478 {
+0% {
+    height: 24px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+}
+75% {
+    height: 20px;
+    width: 20px;
+}
+100% {
+    height: 10px;
+    width: 24px;
+    -webkit-transform: translateY(74px);
+            transform: translateY(74px);
+}
+}
+@-webkit-keyframes loader-swing-data-v-6686d478 {
+0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+}
+@keyframes loader-swing-data-v-6686d478 {
+0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+}
+

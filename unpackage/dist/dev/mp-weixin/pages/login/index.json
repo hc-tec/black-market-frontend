@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ncu-loading": "/components/ncu-loading/ncu-loading",
+    "ncu-message": "/components/ncu-message/ncu-message",
+    "login": "/pages/login/login",
+    "register": "/pages/login/register"
+  }
+}

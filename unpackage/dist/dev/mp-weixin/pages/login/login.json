@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-form-item": "/components/ncu-form-item/ncu-form-item",
+    "ncu-dance-words": "/components/ncu-dance-words/ncu-dance-words",
+    "v-input": "/components/v-input/v-input",
+    "ncu-button": "/components/ncu-button/ncu-button"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "light-input": "/components/light-input/light-input",
+    "ncu-scroll-wrapper-v2": "/components/ncu-scroll-wrapper-v2/ncu-scroll-wrapper-v2",
+    "ncu-chat-list-item": "/components/ncu-chat-list-item/ncu-chat-list-item",
+    "ncu-popup-confirm-modal": "/components/ncu-popup-confirm-modal/ncu-popup-confirm-modal",
+    "user-info-card": "/components/user-info-card/user-info-card"
+  }
+}

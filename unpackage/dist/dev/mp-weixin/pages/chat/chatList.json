@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ncu-scroll-wrapper-v2": "/components/ncu-scroll-wrapper-v2/ncu-scroll-wrapper-v2",
+    "ncu-chat-list-item": "/components/ncu-chat-list-item/ncu-chat-list-item",
+    "ncu-loading-part": "/components/ncu-loading-part/ncu-loading-part",
+    "ncu-no-data": "/components/ncu-no-data/ncu-no-data"
+  }
+}

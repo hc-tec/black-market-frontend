@@ -1,0 +1,49 @@
+.tag-details {
+  position: relative;
+  top: -90px;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+.tag-details-header {
+  width: 100%;
+  height: 13em;
+  padding: .7em 2em;
+  position: relative;
+  top: 75px;
+}
+.tag-details-header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: -90px;
+  background-image: var(--texture);
+  background-position: left;
+}
+.tag-details__title {
+  color: #5e8cfb;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.tag-details__focus-num {
+  color: var(--main-light-color);
+}
+.tag-details .focus-btn {
+  position: absolute;
+  right: 17px;
+  top: 2em;
+}
+.tag-details .focus-btn .cu-btn {
+  background-color: #2adcca;
+  color: white;
+  padding: 15px 24px !important;
+  transition: background-color .2s;
+  border-radius: 30px;
+}
+.tag-details .focus-btn.focus .cu-btn {
+  background-color: transparent;
+  color: var(--main-light-color);
+}
+

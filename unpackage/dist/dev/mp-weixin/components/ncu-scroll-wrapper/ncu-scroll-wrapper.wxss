@@ -1,0 +1,21 @@
+.ncu-scroll-wrapper.data-v-02a45278 {
+  position: relative;
+}
+.soften.data-v-02a45278 {
+  overflow: hidden;
+}
+.soften.data-v-02a45278::before, .soften.data-v-02a45278::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-shadow: var(--soften-shadow);
+  z-index: 1;
+}
+.soften.data-v-02a45278::before {
+  top: 0;
+}
+.soften.data-v-02a45278::after {
+  bottom: 0;
+}
+

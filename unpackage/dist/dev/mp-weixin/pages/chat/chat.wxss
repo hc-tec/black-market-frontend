@@ -1,0 +1,11 @@
+.cu-chat.data-v-bf16e7f4 {
+  padding-bottom: 110rpx;
+  vertical-align: top;
+}
+.chat.data-v-bf16e7f4 {
+  position: relative;
+  bottom: 0;
+  height: 100vh;
+  transition: bottom .3s;
+}
+

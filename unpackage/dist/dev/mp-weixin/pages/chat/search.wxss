@@ -1,0 +1,23 @@
+.search .ncu-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.ncu-search-content {
+  padding: 0 0 10px 0;
+  margin: 0 10px;
+}
+.ncu-search__input [class~=light-input] {
+  opacity: .6;
+  padding: 8px 40px !important;
+  background-color: var(--main-bg-color) !important;
+}
+.cuIcon-search {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--main-light-color);
+}
+

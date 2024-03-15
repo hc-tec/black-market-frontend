@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-carousel": "/components/ncu-carousel/ncu-carousel",
+    "ncu-popup-option": "/components/ncu-popup-option/ncu-popup-option",
+    "ncu-avatar": "/components/ncu-avatar/ncu-avatar",
+    "ncu-radius-btn": "/components/ncu-radius-btn/ncu-radius-btn",
+    "ncu-goods-details-tab": "/components/ncu-goods-details-card/ncu-goods-details-tab"
+  }
+}

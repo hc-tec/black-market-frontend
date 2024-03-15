@@ -1,0 +1,1 @@
+<view class="ncu-form-item animate-move-in _div data-v-56103b24" style="{{'margin-bottom:'+(marginBottom+'px')+';'+('animation-delay:'+(animaDelay+'s')+';')}}"><slot></slot></view>

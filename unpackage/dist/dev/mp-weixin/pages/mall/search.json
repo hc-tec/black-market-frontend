@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ncu-custom-header": "/components/ncu-custom-header/ncu-custom-header",
+    "light-input": "/components/light-input/light-input",
+    "search-tab": "/pages/mall/search/search-tab"
+  }
+}

@@ -1,0 +1,13 @@
+.ncu-goods-details-tab {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ncu-goods-details-tab__title {
+  display: inline-block;
+  width: 60px;
+  font-size: 12px;
+  margin-right: 10px;
+  color: var(--main-light-color);
+}
+

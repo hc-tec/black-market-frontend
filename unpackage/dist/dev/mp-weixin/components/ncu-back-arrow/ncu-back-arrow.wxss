@@ -1,0 +1,23 @@
+.ncu-back-arrow.data-v-09683144 {
+  margin-top: 2px;
+}
+.ncu-back-arrow .line.data-v-09683144 {
+  width: 20px;
+  height: 2px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #043165;
+  position: relative;
+}
+.ncu-back-arrow .other-line.data-v-09683144 {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: -3px;
+  left: -1px;
+  border-radius: 5px;
+  background-color: #043165;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+

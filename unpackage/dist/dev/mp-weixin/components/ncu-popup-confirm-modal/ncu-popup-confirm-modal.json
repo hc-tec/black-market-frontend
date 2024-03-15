@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-popup-modal": "/components/ncu-popup-modal/ncu-popup-modal",
+    "ncu-button": "/components/ncu-button/ncu-button"
+  }
+}

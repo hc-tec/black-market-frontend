@@ -1,0 +1,1 @@
+<view class="search-tab _div data-v-37ff9196"><view class="search-tab__title _div data-v-37ff9196"><label class="{{['icon','_span','data-v-37ff9196',icon]}}"></label>{{''+title+''}}</view><slot></slot></view>

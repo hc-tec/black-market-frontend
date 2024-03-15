@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ncu-icon-wrapper": "/components/ncu-icon-wrapper/ncu-icon-wrapper"
+  }
+}

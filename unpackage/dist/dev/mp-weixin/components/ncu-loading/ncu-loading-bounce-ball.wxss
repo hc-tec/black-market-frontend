@@ -1,0 +1,93 @@
+.ncu-loading-bounce-ball.data-v-8597da0a {
+  position: relative;
+  width: 180px;
+  height: 90px;
+  margin: auto;
+}
+.ncu-loading-bounce-ball.data-v-8597da0a:after, .ncu-loading-bounce-ball.data-v-8597da0a:before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  top: 10px;
+  background-color: #FFCD57;
+  border-radius: 50%;
+}
+.ncu-loading-bounce-ball.data-v-8597da0a:after {
+  left: 120px;
+  -webkit-animation: loader-move2-data-v-8597da0a 0.5s ease-in-out infinite;
+          animation: loader-move2-data-v-8597da0a 0.5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.ncu-loading-bounce-ball.data-v-8597da0a:before {
+  -webkit-animation: loader-move1-data-v-8597da0a 0.5s ease-in-out infinite;
+          animation: loader-move1-data-v-8597da0a 0.5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes loader-move1-data-v-8597da0a {
+0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+}
+65% {
+    height: 60px;
+    width: 60px;
+}
+100% {
+    height: 75px;
+    width: 40px;
+    -webkit-transform: translatex(45px);
+            transform: translatex(45px);
+}
+}
+@keyframes loader-move1-data-v-8597da0a {
+0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+}
+65% {
+    height: 60px;
+    width: 60px;
+}
+100% {
+    height: 75px;
+    width: 40px;
+    -webkit-transform: translatex(45px);
+            transform: translatex(45px);
+}
+}
+@-webkit-keyframes loader-move2-data-v-8597da0a {
+0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+}
+65% {
+    height: 60px;
+    width: 60px;
+}
+100% {
+    height: 75px;
+    width: 40px;
+    -webkit-transform: translatex(-45px);
+            transform: translatex(-45px);
+}
+}
+@keyframes loader-move2-data-v-8597da0a {
+0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+}
+65% {
+    height: 60px;
+    width: 60px;
+}
+100% {
+    height: 75px;
+    width: 40px;
+    -webkit-transform: translatex(-45px);
+            transform: translatex(-45px);
+}
+}
+

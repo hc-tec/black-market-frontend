@@ -1,0 +1,13 @@
+.ncu-emoji.data-v-1914d838 {
+  transition: height .5s;
+}
+.ncu-emoji-page.data-v-1914d838 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+.ncu-emoji__emoji.data-v-1914d838 {
+  font-size: 1.8em;
+  width: calc(100% / 7);
+}
+

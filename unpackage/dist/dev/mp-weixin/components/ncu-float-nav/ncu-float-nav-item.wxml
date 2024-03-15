@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['$emit',['click']]]]]}}" class="{{['ncu-float-nav-item','_div','data-v-73bf6240',active?'active':'']}}" bindtap="__e">{{''+item.text+''}}</view>

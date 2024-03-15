@@ -1,0 +1,8 @@
+.ncu-float-nav-item.data-v-73bf6240 {
+  padding: 8px 6px;
+  text-align: center;
+}
+.ncu-float-nav-item.active.data-v-73bf6240 {
+  color: var(--active-color);
+}
+
