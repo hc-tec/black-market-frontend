@@ -5,20 +5,15 @@
 		:style="{
 			transform: `translateX(-50%) rotateY(${rotate ? 180 : 0}deg)`,
 		}">
+		
 		<ncu-form-item :animaDelay="0">
-			<ncu-dance-words
-				:style="{
-					fontSize: '1.2rem',
-					fontFamily: '楷体'
-				}"
-				:words="projectTitle">
-			</ncu-dance-words>
+			<image mode="aspectFit" src="/static/mall2.png"></image>
 		</ncu-form-item>
 		<ncu-form-item :animaDelay="0.2">
 			<v-input
 				icon="people"
 				placeholder="用户名"
-				v-model="userInfo.user_name">
+				v-model="userInfo.student_id">
 			</v-input>
 		</ncu-form-item>
 		<ncu-form-item
@@ -33,7 +28,7 @@
 		</ncu-form-item>
 		<ncu-form-item :animaDelay="0.6">
 			<ncu-button
-				bgImage="blue"
+				bgImage="white"
 				width="80%"
 				shadow
 				:radius="true"
@@ -43,7 +38,7 @@
 		</ncu-form-item>
 		<ncu-form-item :animaDelay="0.8">
 			<ncu-button
-			 	bgColor="green"
+			 	bgColor="white"
 				width="80%"
 				shadow
 				:hollowOut="true"
@@ -52,7 +47,7 @@
 			 	注册
 			</ncu-button> 
 		</ncu-form-item>
-		<ncu-form-item
+		<!-- <ncu-form-item
 			:animaDelay="1"
 			:style="{
 				position: 'absolute',
@@ -71,7 +66,7 @@
 			 	<span class="cuIcon-weixin"></span>微信登录
 			</ncu-button> 
 						
-		</ncu-form-item>
+		</ncu-form-item> -->
 		
 	</div>
 </template>
@@ -100,7 +95,7 @@
         data() {
             return {
 				userInfo: {
-					user_name: 'xing',
+					student_id: '8002119299',
 					password: 'sun19961203@'
 				},
 				projectTitle: projectTitle,
@@ -108,8 +103,8 @@
         },
 		methods: {
 			userInfoValidator() {
-				const requiredFields = ['user_name', 'password']
-				const requiredFieldsHans = ['用户名', '密码']
+				const requiredFields = ['student_id', 'password']
+				const requiredFieldsHans = ['学号', '密码']
 				return validator(this.userInfo, requiredFields, requiredFieldsHans)
 			},
 			async login() {
@@ -194,16 +189,17 @@
 </script>
 
 <style lang="scss" scoped>
+	
 	.ncu-login {
 		width: 90%;
-		height: 80vh;
-		margin: 10vh auto;
+		height: 60vh;
+		margin: 0 auto;
 		padding: 20% 30px;
-		background-color: var(--main-bg-color);
-		background-image: url(http://neumorphic.cn/static/50bf7e26-4f8b-4205-9f7c-60787297c668.svg);
+		// background-color: var(--main-bg-color);
 		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: 300%;
+		
 		border-radius: 6px;
 		text-align: center;
 		position: absolute;

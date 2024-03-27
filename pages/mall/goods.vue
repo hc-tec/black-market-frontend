@@ -44,6 +44,7 @@
 	
     export default {
 		onLoad(option) {
+			console.log('onLoad')
 			this.title = option.title
 			if(option.index)
 				this.index = +option.index
@@ -147,7 +148,8 @@
 			},
 		},
 		mounted() {
-			this.getGoods(1)
+			console.log('mounted flushGoods')
+			// this.flushGoods()
 		}
     }
 </script>

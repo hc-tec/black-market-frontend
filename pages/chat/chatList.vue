@@ -180,9 +180,9 @@
 			
 		},
 		created() {
-			globalData.initWebsocket()
-			this.dispatchMsg()
-			this.getChatList()
+			// globalData.initWebsocket()
+			// this.dispatchMsg()
+			// this.getChatList()
 		}
     }
 </script>

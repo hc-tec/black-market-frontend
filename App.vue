@@ -21,9 +21,10 @@
 				student_id: '8002119301',
 				user_name: '慕尘嚣',
 				avatar: 'https://i0.hdslb.com/bfs/face/6a2ab77a7ba13ab02bf4fe318025ae46c5ec6b59.jpg@140w_140h_1c.webp',
-				school_zone: '青山湖校区',
+				school_zone: '主校区',
 				profile: '未尝不是狂欢()',
-				qq: '2598772546',
+				email: '2598772546@qq.com',
+				contact: '2598772546',
 				txn_statistics: {
 					sold_goods: 20,
 					purchase_goods: 20,
@@ -154,6 +155,9 @@
 				source: 'url("https://fonts.gstatic.com/s/notosanssc/v12/k3kXo84MPvpLmixcA63oeALhLOCT-xWNm8Hqd37g1OkDRZe7lR4sg1IzSy-MNbE9VH8V.118.woff2")',
 				success() {
 				  console.log('success')
+				},
+				fail(e) {
+					console.log('Source load fail', e)
 				}
 			})
 			uni.getSystemInfo({
@@ -268,6 +272,12 @@
 	@import "colorui/icon.css";
 	@import "components/ripple.css";
 	@import "components/animation.css";
+	
+	@font-face{
+	  font-family: HanYiQiHei;
+	  src: url('/static/HanYiQiHei-105Jian-Regular-2.ttf');
+	}  //可写多个
+
 	
 	body {
 		--main-bg-color: #fff;
@@ -435,5 +445,8 @@
 			animation-delay: $i*0.1s;
 		}
 	}
-	
+	.v-input-disabled .uni-input-wrapper,
+	.v-input-disabled input {
+		pointer-events: none !important;
+	}
 </style>

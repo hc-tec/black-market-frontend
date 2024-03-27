@@ -5,9 +5,14 @@ export const WXAuthAPI = 'https://api.weixin.qq.com/sns/jscode2session'
 
 export const ws_chat_api = `ws://localhost:8001/ws/chat`
 
+
+export const loginOrRegister_api = `${Host}/users/loginOrRegister/`
+
 export const register_api = `${Host}/users/register/`
 
 export const wechatRegister_api = `${Host}/users/wechatRegister/`
+
+
 
 export const login_api = `${Host}/users/login/`
 
@@ -31,7 +36,7 @@ export const exit_api = `${Host}/users/exit/`
 
 export const logout_api = `${Host}/users/logout/`
 
-export const goodUpload_api = `${Host}/users/goodUpload/`
+export const goodsUploadAndUpdate_api = `${Host}/users/goodsUploadAndUpdate/`
 
 export const getUserinfo_api = `${Host}/users/getUserinfo/`
 
@@ -77,7 +82,11 @@ export const ChatMessage_api = `${Host}/users/ChatMessage`
 
 export const ChatUserSearch_api = `${Host}/users/ChatUserSearch`
 
+export const SuggestTags_api = `${Host}/users/suggestTagsView/`
+
 export const image_upload_api = `${Host}/uploader/imageUpload`
+
+
 
 
 

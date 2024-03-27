@@ -84,7 +84,7 @@
 					seller: { // 用户对象
 						id: 0, // 用户 id 
 						user_name: '卖家', // 用户名
-						school_zone: '青山湖校区', // 用户所属校区
+						school_zone: '主校区', // 用户所属校区
 						avatar: '', // 用户头像
 					},
 					goodsInfo: {

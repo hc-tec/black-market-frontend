@@ -50,16 +50,11 @@
 </template>
 
 <script>
-	import ncuProfileCard from '../../components/ncu-profile-card/ncu-profile-card.vue'
 	import GlobalData from '../../common/global.js'
 	import { sleep } from '../../common/func.js'
 	import { httpGet } from '../../common/http.js'
 	import { getUserinfo_api } from '../../common/api.js'
     export default {
-		name: 'ncu-profile-card',
-		components: {
-			ncuProfileCard
-		},
         data() {
             return {
 				exitModalOpen: false,

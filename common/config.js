@@ -7,33 +7,21 @@ export const projectTitle = "我的校园市场"
 
 export const schoolZones = [
 	{
-		label: '前湖校区-医学部',
+		label: '主校区',
 		value: 1,
 	},
 	{
-		label: '前湖校区-天健',
+		label: '同济校区',
 		value: 2,
 	},
 	{
-		label: '前湖校区-修贤',
+		label: '网安校区',
 		value: 3,
 	},
 	{
-		label: '东湖校区',
+		label: '军山校区',
 		value: 4,
-	},
-	{
-		label: '青山湖校区',
-		value: 5,
-	},
-	{
-		label: '鄱阳湖校区',
-		value: 6,
-	},
-	{
-		label: '抚州校区',
-		value: 7,
-	},
+	}
 	
 ]
 

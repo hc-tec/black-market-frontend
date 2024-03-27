@@ -14,7 +14,7 @@
 			class="valid-send-btn"
 			:class="{
 				'cuIcon-forward': !validCodeBtnActive,
-				'bg-gradual-blue': !validCodeBtnActive,
+				'bg-gradual-green': !validCodeBtnActive,
 				'bg-grey': validCodeBtnActive,
 			}"
 			@click="handleSendBtnClick">

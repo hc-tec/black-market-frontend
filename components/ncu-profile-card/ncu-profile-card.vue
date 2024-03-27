@@ -92,9 +92,10 @@
 					student_id: '8002119301',
 					user_name: '慕尘嚣',
 					avatar: 'https://i0.hdslb.com/bfs/face/6a2ab77a7ba13ab02bf4fe318025ae46c5ec6b59.jpg@140w_140h_1c.webp',
-					school_zone: '青山湖校区',
+					school_zone: '主校区',
 					profile: '未尝不是狂欢()',
-					qq: '2598772546',
+					email: '2598772546@qq.com',
+					contact: '2598772546',
 					txn_statistics: {
 						sold_goods: 20,
 						purchase_goods: 20,

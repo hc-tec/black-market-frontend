@@ -1,8 +1,17 @@
 {
 	"pages": [
 		{
+			"path": "pages/login/index"
+		},
+		{
 			"path": "pages/index/index"
 		},
+		
+		
+		{
+			"path": "pages/guide/index"
+		},
+		
 		{
 			"path": "pages/chat/index"
 		},
@@ -60,9 +69,7 @@
 		},
 		
 		
-		{
-			"path": "pages/login/index"
-		},
+		
 		{
 			"path": "pages/mall/special-area"
 		},

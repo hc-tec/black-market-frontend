@@ -284,7 +284,7 @@
 			},
 			copy() {
 				uni.setClipboardData({
-				    data: this.goodsDetails.seller.qq,
+				    data: this.goodsDetails.seller.contact,
 				});
 			},
 			handleAvatarClick() {

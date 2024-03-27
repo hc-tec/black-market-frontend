@@ -170,4 +170,23 @@
 	  from { transform: scale(2); }
 	  to { transform: scale(1); opacity: 1; }
 	}
+	
+	.animate-bounce-down {
+		animation: bounce-down 8s linear infinite;
+	}
+	
+	@-webkit-keyframes bounce-down {
+    25% {
+        -webkit-transform: translateY(-20px)
+    }
+
+    100%,50% {
+        -webkit-transform: translateY(0)
+    }
+
+    75% {
+        -webkit-transform: translateY(20px)
+    }
+}
+	
 

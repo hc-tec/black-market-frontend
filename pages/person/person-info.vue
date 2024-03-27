@@ -38,11 +38,11 @@
 				******
 			</ncu-settings-item>
 			<ncu-settings-item
-				label="QQ" 
+				label="Email" 
 				arrow
 				:index="5"
-				@click="qqItemActivate">
-				{{ GlobalData.userInfo.qq }}
+				@click="emailItemActivate">
+				{{ GlobalData.userInfo.email }}
 			</ncu-settings-item>
 			<ncu-settings-item
 				label="所属校区" 
@@ -146,15 +146,15 @@
 		</ncu-popup-confirm-modal>
 		
 		<ncu-popup-confirm-modal
-			title="请输入QQ"
+			title="请输入email"
 			cancelBtnText="返回"
-			:open="qqItem.open"
+			:open="emailItem.open"
 			:keyboardHeight="keyboardHeight"
-			@confirm="qqModifyConfirm"
-			@cancel="qqModifyCancel"
-			@layer-click="qqItem.open=false">
+			@confirm="emailModifyConfirm"
+			@cancel="emailModifyCancel"
+			@layer-click="emailItem.open=false">
 			<light-input 
-				v-model="qqItem.qq"
+				v-model="emailItem.email"
 				@focus="inputFocus"
 				@blur="inputBlur">
 			</light-input>
@@ -162,18 +162,18 @@
 		
 		<ncu-popup-confirm-modal
 			title="验证码"
-			:open="qqValidCodeItem.open"
+			:open="emailValidCodeItem.open"
 			:keyboardHeight="keyboardHeight"
-			@confirm="qqValidCodeModifyConfirm"
-			@cancel="qqValidCodeItem.open=false"
-			@layer-click="qqValidCodeItem.open=false">
+			@confirm="emailValidCodeModifyConfirm"
+			@cancel="emailValidCodeItem.open=false"
+			@layer-click="emailValidCodeItem.open=false">
 			<div class="valid-code-wrapper">
 				<v-valid-input
 					style="width: 100%;"
-					ref="qqValidCodeInput"
+					ref="emailValidCodeInput"
 					input-type="light-input"
-					v-model="qqValidCodeItem.validCode"
-					@send="qqSendValidCode"
+					v-model="emailValidCodeItem.validCode"
+					@send="emailSendValidCode"
 					@focus="inputFocus"
 					@blur="inputBlur">
 				</v-valid-input>
@@ -273,11 +273,11 @@
 					validCode: '',
 					open: false
 				},
-				qqItem: {
-					qq: '',
+				emailItem: {
+					email: '',
 					open: false,
 				},
-				qqValidCodeItem: {
+				emailValidCodeItem: {
 					validCode: '',
 					open: false
 				},
@@ -352,13 +352,13 @@
 					this.passwordItem.open = true
 				}
 			},
-			qqItemActivate() {
+			emailItemActivate() {
 				const isValidate = 
-					this.qqValidCodeItem.validCode
+					this.emailValidCodeItem.validCode
 				if(!isValidate) {
-					this.qqValidCodeItem.open = true
+					this.emailValidCodeItem.open = true
 				} else {
-					this.qqItem.open = true
+					this.emailItem.open = true
 				}
 			},
 			async passwordSendValidCode() {
@@ -372,14 +372,14 @@
 					this.messageOpen('验证码发送成功')
 				}
 			},
-			async qqSendValidCode() {
+			async emailSendValidCode() {
 				this.isLoading = true
 				const [res, err] = await httpGet(getCode_api,{},2006)
 				this.isLoading = false
 				if(err) {
 					this.messageOpen(err, 'danger')
 				} else {
-					this.$refs.qqValidCodeInput.send()
+					this.$refs.emailValidCodeInput.send()
 					this.messageOpen('验证码发送成功')
 				}
 			},
@@ -393,14 +393,14 @@
 					this.passwordItem.open = true
 				}
 			},
-			qqValidCodeModifyConfirm() {
+			emailValidCodeModifyConfirm() {
 				const isValidate =
-					this.qqValidCodeItem.validCode
+					this.emailValidCodeItem.validCode
 				if(!isValidate) {
 					this.messageOpen('验证码不能为空', 'danger')
 				} else {
-					this.qqValidCodeItem.open = false
-					this.qqItem.open = true
+					this.emailValidCodeItem.open = false
+					this.emailItem.open = true
 				}
 			},
 			async userNameModifyConfirm() {
@@ -455,26 +455,26 @@
 				this.messageOpen('密码修改成功')
 				this.passwordItem.open = false
 			},
-			qqModifyCancel() {
-				this.qqItem.open = false
-				this.qqValidCodeItem.open = true
+			emailModifyCancel() {
+				this.emailItem.open = false
+				this.emailValidCodeItem.open = true
 			},
-			async qqModifyConfirm() {
-				const isValid = this.qqItem.qq
+			async emailModifyConfirm() {
+				const isValid = this.emailItem.email
 				if(!isValid) return
 				this.isLoading = true
-				const [res, err] = await httpPut(qqModify_api, {
-					qq: this.qqItem.qq,
-					ver_code: this.qqValidCodeItem.validCode
+				const [res, err] = await httpPut(emailModify_api, {
+					email: this.emailItem.email,
+					ver_code: this.emailValidCodeItem.validCode
 				}, 2008)
 				this.isLoading = false
 				if(err) {
 					this.messageOpen(err, 'danger')
 					return
 				}
-				this.messageOpen('QQ修改成功')
-				GlobalData.userInfo.qq = this.qqItem.qq
-				this.qqItem.open = false
+				this.messageOpen('email修改成功')
+				GlobalData.userInfo.email = this.emailItem.email
+				this.emailItem.open = false
 			},
 			async schoolZoneModifyConfirm() {
 				const isValid = this.schoolZoneItem.school_zone

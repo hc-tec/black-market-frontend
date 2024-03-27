@@ -10,23 +10,26 @@
 			height="calc(96vh - 65px)">
 			<div class="ncu-goods-upload">
 				<light-input
+					type="textarea"
 					class="animate-move-left"
 					size="super"
 					style="margin: 0 10px;display: block;"
 					v-model="goodsInfo.goods_title"
-					placeholder="标题">
+					placeholder="标题"
+					@blur="titleInputBlur">
 				</light-input>
 				<ncu-settings-item
 					label="价格"
 					index="1"
 					@click="goodsPriceItem.open=true"
 					:arrow="false">
-					￥{{ goodsInfo.goods_price }}
+					<span style="color: #e54d42;">
+						￥{{ goodsInfo.goods_price }}
+					</span>
 				</ncu-settings-item>
 				<ncu-settings-item
 					label="标签"
 					index="2"
-					style="width: 60%;"
 					@click="goodsTagsItem.open=true"
 					:arrow="false">
 					<template v-if="goodsInfo.goods_tags.length">
@@ -66,10 +69,11 @@
 				</ncu-settings-item>
 				<ncu-button 
 					class="animate-move-bottom"
-					bgImage="blue"
+					bgImage="orange"
 					width="100%" 
-					style="width: 90%;margin: 10px auto;display: block;animation-delay: 1s;"
+					style="width: 90%;margin: 10px auto;display: flex;animation-delay: 1s;"
 					shadow
+					size="super"
 					:disabled="isLoading"
 					@click="addToShop">
 					<span class="cuIcon-upload">
@@ -116,8 +120,8 @@
 				</div>
 			</div>
 			<div class="tag-choose">
-				<ncu-title title="热门标签" type="no-bg"></ncu-title>
-				<div class="ncu-goods-tags hot">
+				<ncu-title title="建议标签" type="no-bg"></ncu-title>
+				<div class="ncu-goods-tags hot" >
 					<ncu-popup-option 
 						v-for="tag in goodsHotTags"
 						style="margin-right: 10px;"
@@ -171,7 +175,7 @@
 			<light-input
 				type="textarea"
 				v-model="goodsDescItem.item"
-				placeholder="这件商品, hmm, 我还得多说两句"
+				placeholder="让我再补充一下"
 				@focus="textareaFocus"
 				@blur="inputBlur">
 			</light-input>
@@ -204,8 +208,8 @@
 								style="min-width: 30%;margin: 1% 1%;"
 								v-for="i in 6"
 								:key="i"
-								:src="goodsImgsItem.other_imgs[i]"
-								@click="previewImgs(goodsImgsItem.other_imgs[i])">
+								:src="goodsImgsItem.other_imgs[i-1]"
+								@click="previewImgs(goodsImgsItem.other_imgs[i-1])">
 							</ncu-img>
 						</div>
 					</div>
@@ -229,22 +233,22 @@
 
 <script>
 	import GlobalData from '../../common/global.js'
-	import { Host, image_upload_api, goodsView_api } from '../../common/api.js'
-	import { uniFileUploader, httpPost } from '../../common/http.js'
+	import { Host, image_upload_api, goodsView_api, SuggestTags_api, goodsUploadAndUpdate_api } from '../../common/api.js'
+	import { uniFileUploader, httpPost, httpGet } from '../../common/http.js'
 	import { validator } from '../../common/func.js'
     export default {
         data() {
             return {
 				refresherEnabled: true,
 				keyboardHeight: 0,
-				goodsHotTags: ['可刀', '九成新', '几天前买的', '书上含笔记'],
-				goodsSelfTags: ['可刀', '九成新', '几天前买的', '书上含笔记', '可刀', '九成新', '几天前买的', '书上含笔记', '可刀', '九成新', '几天前买的', '书上含笔记', '可刀', '九成新', '几天前买的', '书上含笔记', '可刀', '九成新', '几天前买的', '书上含笔记'],
+				goodsHotTags: [],
+				goodsSelfTags: [],
 				goodsInfo: {
 					goods_main_image: '', // 商品主图
 					goods_img: [], // 商品图片
 					goods_title: '蓝牙耳机', // 商品标题
 					goods_price: 20, // 商品价格
-					goods_tags: ['可刀'], // 商品标签
+					goods_tags: [], // 商品标签
 					goods_desc: '', // 商品描述
 				},
 				goodsPriceItem: {
@@ -284,6 +288,19 @@
 			}
 		},
 		methods: {
+			titleInputBlur() {
+				this.getSuggestTags()
+			},
+			async getSuggestTags() {
+				if (!this.goodsInfo.goods_title) return
+				this.goodsHotTags = []
+				const [res, err] = await httpGet(SuggestTags_api, {
+					tag: this.goodsInfo.goods_title
+				})
+				if (res.data.code === 2506) {
+					this.goodsHotTags = res.data.data
+				}
+			},
 			inputFocus(e) {
 				this.keyboardHeight = e.detail.height
 			},
@@ -341,6 +358,7 @@
 					sourceType: ['album'], //从相册选择
 					success: (res) => {
 						// res.tempFilePaths
+						console.log(res.tempFilePaths);
 						[this.goodsImgsItem.main_img, ...this.goodsImgsItem.other_imgs] = res.tempFilePaths
 					}
 				})
@@ -400,7 +418,7 @@
 				}
 				try {
 					await this.uploadImages(this.goodsImgsItem.main_img, ...this.goodsImgsItem.other_imgs)
-					const [res, err] = await httpPost(goodsView_api, {
+					const [res, err] = await httpPost(goodsUploadAndUpdate_api, {
 						...this.goodsInfo,
 					}, 2011)
 					this.isLoading = false
@@ -485,13 +503,15 @@
 		flex-wrap: wrap;
 		max-height: 12vh;
 		overflow: auto;
+		align-items: flex-start;
 		
 		&.self {
 			font-size: 1rem;
 			margin-bottom: 10px;
 		}
 		&.hot {
-			height: 80px;
+			height: 120px;
+			margin-bottom: 10px;
 		}
 	}
 	.ncu-goods-new-tag {

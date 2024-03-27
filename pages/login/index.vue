@@ -1,17 +1,25 @@
 <template>
 	<div class="ncu-entry">
-		<register 
-			v-model="isLoading"
-			:rotate="rotate"
-			@onRotate="val => rotate=val"
-			@messageOpen="messageOpen">
-		</register>
-		<login
-			v-model="isLoading"
-			:rotate="rotate"
-			@onRotate="val => rotate=val"
-			@messageOpen="messageOpen">
-		</login>
+		<image
+			class="bottom-layer-bg"
+			src="/static/Camera_XHS_17109508678381040g008310enuhp96a2g5n2b.jpg">
+		</image>
+		<div class="entry-wrapper">
+			
+			<register 
+				v-model="isLoading"
+				:rotate="rotate"
+				@onRotate="val => rotate=val"
+				@messageOpen="messageOpen">
+			</register>
+			<!-- <login
+				v-model="isLoading"
+				:rotate="rotate"
+				@onRotate="val => rotate=val"
+				@messageOpen="messageOpen">
+			</login> -->
+		
+		</div>
 		<ncu-loading
 			:active="isLoading"
 			type="bounce-stick">
@@ -37,7 +45,7 @@
         data() {
             return {
 				isLoading: false,
-				rotate: false,
+				rotate: true,
 				messageConfig: {
 					open: false,
 					type: 'success',
@@ -68,8 +76,25 @@
 </script>
 
 <style lang="scss" scoped>
-	
-	
+	.ncu-entry {
+		position: relative;
+	}
+	.bottom-layer-bg {
+		position: fixed;
+		left: 0%;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+	}
+	.entry-wrapper {
+		backdrop-filter: blur(30px);
+		position: fixed;
+		left: 0%;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+	}
 </style>
 
 

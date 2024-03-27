@@ -24,7 +24,11 @@
 		 />
 		<input 
 			v-else
-			class="v-input"
+			
+			:class="{
+				'v-input': true,
+				'v-input-disabled': disabled,
+			}"
 			:type="type"
 			:value="value"
 			:placeholder="placeholder"
@@ -32,7 +36,6 @@
 			:selection-start="0"
 			:selection-end="0"
 			:adjust-position="true"
-			:disabled="disabled"
 			:confirm-type="confirmType"
 			:style="{
 				padding: getPaddingBySize,
@@ -58,7 +61,7 @@
 	 * @property {String} type 类型,可选值：text | number | idcard | digit
 	 * @property {String | Number} value 值
 	 * @property {String} placeholder 占位符
-	 * @property {String} size 大小，可选值：normal | mini
+	 * @property {String} size 大小，可选值：big | normal | mini
 	 * @property {Boolean} disabled 是否禁用
 	 * @property {String} confirmType 输入框右下角按钮值，可选值：send | search | next | go | done
 	 */
@@ -81,7 +84,7 @@
 			},
 			size: {
 				type: String,
-				default: 'normal'
+				default: 'big'
 			},
 			disabled: {
 				type: Boolean,
@@ -104,6 +107,7 @@
 		computed: {
 			getPaddingBySize() {
 				const paddingSizeMap = {
+					big: '20px 0',
 					normal: '13px 0',
 					mini: '8px 0'
 				}
@@ -122,7 +126,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	.v-input-wrapper {
 		position: relative;
 		display: block;
@@ -135,12 +139,12 @@
 		height: auto;
 		width: 100%;
 		font-weight: 500;
-		border-radius: 4px;
+		border-radius: 10px;
 		font-size: 12px;
 		line-height: 22px;
 		letter-spacing: 0.5px;
 		outline: none;
-		color: #c4c3ca;
+		color: black;
 		background-color: white;
 		transition: all 200ms linear;
 		box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.06);
@@ -159,6 +163,10 @@
 	.v-textarea {
 		height: 70px;
 	}
+	.v-input-disabled {
+		
+	}
+	
 </style>
 
 

@@ -17,16 +17,6 @@
 			height="calc(96vh - 100px)"
 			@scrolltolower="getGoods(curPage)"
 			@scrolltoupper="flushGoods">
-			<!-- <div class="ncu-scroll-items-wrapper animate-move-in">
-				<ncu-dance-words 
-					words="Welcome"
-					style="text-align: center;">
-				</ncu-dance-words>
-				<ncu-scroll-title
-					:scrollItem="scrollItems"
-					@click="scrollTitleClick">
-				</ncu-scroll-title>
-			</div> -->
 			
 			<ncu-category-item
 				icon="cuIcon-locationfill"
@@ -36,13 +26,30 @@
 				@click="schoolZoneItem.open=true">
 			</ncu-category-item>
 			
-			<ncu-carousel
+			<div style="padding: 0em 1.2em;display: flex;">
+				<ncu-card 
+					style="flex: 1;margin-right: 10px;"
+					title="闲置发布"
+					subTitle="上传到摊位"
+					icon="/static/guide-icon/6d32d7a6-ae69-49ca-aa32-f25adac6e1a2-removebg-preview.png">
+					100 位同学已发布
+				</ncu-card>
+				<ncu-card
+					style="flex: 1;margin-right: 10px;"
+					title="物品求购"
+					subTitle="同学们需要啥"
+					icon="/static/mall-card-icons/12808-5-Bdicon_V1.0-msstyle.png">
+					100 件物品待求购
+				</ncu-card>
+			</div>
+			
+			<!-- <ncu-carousel
 				class="goods-carousel"
 				_style="width: 90%;height: 120px;"
 				indicatorActiveColor="rgb(94,140,251)"
 				:imgs="getCarouselImgs"
 				@imgClick="carouselImgClick">
-			</ncu-carousel>
+			</ncu-carousel> -->
 			
 			<div class="mall-nav">
 				<ncu-radius-btn
@@ -51,7 +58,7 @@
 					icon="cuIcon-presentfill"
 					text="免费区"
 					style="width: 25%;text-align: center;"
-					:index="8"
+					:index="1"
 					@click="toSpecialPriceGoods('free', $event)">
 				</ncu-radius-btn>
 				<ncu-radius-btn
@@ -60,7 +67,7 @@
 					icon="cuIcon-evaluate_fill"
 					text="特价区"
 					style="width: 25%;text-align: center;"
-					:index="9"
+					:index="2"
 					@click="toSpecialPriceGoods('special', $event)">
 				</ncu-radius-btn>
 				<ncu-radius-btn
@@ -69,7 +76,7 @@
 					icon="cuIcon-tagfill"
 					text="商品类别"
 					style="width: 25%;text-align: center;"
-					:index="10"
+					:index="3"
 					@click="toGoodsCategory">
 				</ncu-radius-btn>
 				<ncu-radius-btn
@@ -78,27 +85,9 @@
 					icon="cuIcon-evaluate_fill"
 					text="特价区"
 					style="width: 25%;text-align: center;"
-					:index="11"
+					:index="4"
 					@click="toSpecialPriceGoods('special', $event)">
 				</ncu-radius-btn>
-				<!-- <ncu-zhhot-button 
-					bgColor="rgb(212,240,254)"
-					color="rgb(10,65,136)"
-					icon="cuIcon-presentfill"
-					text="免费区"
-					style="width: 100%;margin-right: .5em;"
-					:index="8"
-					@click="toSpecialPriceGoods('free', $event)">
-				</ncu-zhhot-button>
-				<ncu-zhhot-button
-					bgColor="rgb(200,246,235)"
-					color="rgb(10,86,63)"
-					icon="cuIcon-evaluate_fill"
-					text="特价区"
-					style="width: 100%;"
-					:index="9"
-					@click="toSpecialPriceGoods('special', $event)">
-				</ncu-zhhot-button> -->
 			</div>
 			
 			<ncu-goods 
@@ -106,31 +95,7 @@
 				@click="goodsCardClick"
 				@avatarClick="toSellerInfo">
 			</ncu-goods>
-			
-			<!-- <div class="ncu-mall-goods">
-				<div class="ncu-mall-goods__left">
-					<ncu-goods-card
-						v-for="(goodsItem,index) in 
-								goodsItems.slice(0, Math.ceil(goodsItems.length/2))"
-						:key="goodsItem.goods_id"
-						:index="index"
-						:goods="goodsItem"
-						@click="goodsCardClick"
-						@avatarClick="toSellerInfo">
-					</ncu-goods-card>
-				</div>
-				<div class="ncu-mall-goods__right">
-					<ncu-goods-card
-						v-for="(goodsItem,index) in 
-								goodsItems.slice(Math.ceil(goodsItems.length/2))"
-						:key="goodsItem.goods_id"
-						:index="Math.ceil(goodsItems.length/2)+index"
-						:goods="goodsItem"
-						@click="goodsCardClick(Math.ceil(goodsItems.length/2)+index)"
-						@avatarClick="toSellerInfo">
-					</ncu-goods-card>
-				</div>
-			</div> -->
+		
 			<ncu-loading-part 
 				type="bounce-stick"
 				:active="isLoading">
@@ -177,6 +142,7 @@
 	import { httpGet } from '../../common/http.js'
 	import { schoolZones } from '../../common/config.js'
 	import GlobalData from '../../common/global.js'
+	
     export default {
 		onLoad(option) {
 			this.urlParamsTag = option.tag
@@ -189,10 +155,10 @@
 				schoolZones: schoolZones,
 				selectGoodsDetails: {},
 				carouselImgs: [
-					{"seller":{"id":1,"user_name":"test3","school_zone":"前湖校区-医学部","avatar":"","qq":"2598772546"},"goodsInfo":{"goods_id":18,"goods_main_image":"https://neumorphic.cn/static/6c82b395-a5b5-4557-821e-e88e918f104a.jpg","goods_img":[],"goods_title":"蓝牙耳机","goods_price":20.0,"goods_tags":["九成新", "九成新", "九成新", "九成新", "九成新", "九成新"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:26:27","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}},
-					{"seller":{"id":1,"user_name":"test3","school_zone":"前湖校区-医学部","avatar":"","qq":"2598772546"},"goodsInfo":{"goods_id":17,"goods_main_image":"https://neumorphic.cn/static/5934ac95-39c9-45ef-bc43-233f95282c17.jpg","goods_img":[],"goods_title":"蓝牙耳机","goods_price":20.0,"goods_tags":["可刀"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:24:02","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}},
-					{"seller":{"id":1,"user_name":"test3","school_zone":"前湖校区-医学部","avatar":"","qq":"2598772546"},"goodsInfo":{"goods_id":16,"goods_main_image":"https://neumorphic.cn/static/7c00dfa3-8d05-4b2c-bf14-c80786bb8dc2.jpg","goods_img":[],"goods_title":"test","goods_price":1.0,"goods_tags":["九成新"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:16:52","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":true}},
-					{"seller":{"id":1,"user_name":"test3","school_zone":"前湖校区-医学部","avatar":"","qq":"2598772546"},"goodsInfo":{"goods_id":15,"goods_main_image":"https://neumorphic.cn/static/6c82b395-a5b5-4557-821e-e88e918f104a.jpg","goods_img":[],"goods_title":"test","goods_price":1.0,"goods_tags":["九成新"],"goods_desc":"s","goods_launch_time":"2021-07-31 14:12:29","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}}
+					{"seller":{"id":1,"user_name":"test3","school_zone":"主校区","avatar":"","contact":"2598772546", "email":"2598772546@qq.com"},"goodsInfo":{"goods_id":18,"goods_main_image":"https://neumorphic.cn/static/6c82b395-a5b5-4557-821e-e88e918f104a.jpg","goods_img":[],"goods_title":"蓝牙耳机","goods_price":20.0,"goods_tags":["九成新", "九成新", "九成新", "九成新", "九成新", "九成新"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:26:27","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}},
+					{"seller":{"id":1,"user_name":"test3","school_zone":"主校区","avatar":"","contact":"2598772546", "email":"2598772546@qq.com"},"goodsInfo":{"goods_id":17,"goods_main_image":"https://neumorphic.cn/static/5934ac95-39c9-45ef-bc43-233f95282c17.jpg","goods_img":[],"goods_title":"蓝牙耳机","goods_price":20.0,"goods_tags":["可刀"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:24:02","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}},
+					{"seller":{"id":1,"user_name":"test3","school_zone":"主校区","avatar":"","contact":"2598772546", "email":"2598772546@qq.com"},"goodsInfo":{"goods_id":16,"goods_main_image":"https://neumorphic.cn/static/7c00dfa3-8d05-4b2c-bf14-c80786bb8dc2.jpg","goods_img":[],"goods_title":"test","goods_price":1.0,"goods_tags":["九成新"],"goods_desc":"x","goods_launch_time":"2021-07-31 14:16:52","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":true}},
+					{"seller":{"id":1,"user_name":"test3","school_zone":"主校区","avatar":"","contact":"2598772546", "email":"2598772546@qq.com"},"goodsInfo":{"goods_id":15,"goods_main_image":"https://neumorphic.cn/static/6c82b395-a5b5-4557-821e-e88e918f104a.jpg","goods_img":[],"goods_title":"test","goods_price":1.0,"goods_tags":["九成新"],"goods_desc":"s","goods_launch_time":"2021-07-31 14:12:29","goods_is_sold":false,"goods_wanted_person":1,"is_wanted_user":false}}
 				],
 				scrollItems: [
 					{
@@ -418,7 +384,8 @@
 				this.getGoods()
 			},
 		},
-		mounted() {
+		created() {
+			this.flushGoods()
 			const isLogin = GlobalData.checkLogin()
 			if(!isLogin) {
 				GlobalData.login.addWatcher(this.startRequest)

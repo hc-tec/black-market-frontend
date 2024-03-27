@@ -115,7 +115,7 @@
 
 <style lang="scss" scoped>
 	.ncu-popup-modal {
-		width: 100%;
+		width: calc(100% - 60px);
 		position: fixed;
 		padding: 30px;
 		background-color: var(--main-bg-color);

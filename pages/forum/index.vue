@@ -300,6 +300,7 @@
 			}
 		},
 		created() {
+			this.flushThread()
 			const isLogin = GlobalData.checkLogin()
 			if(!isLogin) {
 				GlobalData.login.addWatcher(this.startRequest)

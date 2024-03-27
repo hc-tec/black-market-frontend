@@ -58,7 +58,7 @@
 					user_info: {
 						id: 4,
 						user_name: '慕尘嚣',
-						school_zone: '青山湖校区',
+						school_zone: '主校区',
 						avatar: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg'
 					},
 					comment_id: 1,

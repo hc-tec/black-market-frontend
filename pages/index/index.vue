@@ -123,25 +123,25 @@
 						}, 2000)
 						
 						if(res.data?.detail) {
-							setTimeout(() => {
-								uni.showToast({
-									title: '登录状态过期',
-									duration: 3000,
-									icon: 'none'
-								})
-							}, 1000)
+							// setTimeout(() => {
+							// 	uni.showToast({
+							// 		title: '登录状态过期',
+							// 		duration: 3000,
+							// 		icon: 'none'
+							// 	})
+							// }, 1000)
 							
-							uni.redirectTo({
-								url: '/pages/login/index'
-							})
-							return
+							// uni.redirectTo({
+							// 	url: '/pages/login/index'
+							// })
+							// return
 						}
 						
-						globalData.userInfo = res.data[0]
-						globalData.userInfo['isLogin'] = true
-						globalData.focusUserInfo = {}
+						// globalData.userInfo = res.data[0]
+						// globalData.userInfo['isLogin'] = true
+						// globalData.focusUserInfo = {}
 						
-						globalData.login.noticeWatcher()
+						// globalData.login.noticeWatcher()
 					} catch(e) {
 						uni.showToast({
 							title: '网络错误',

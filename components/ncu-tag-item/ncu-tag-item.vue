@@ -59,9 +59,9 @@
 						author_info: {
 							id: 2, 
 							user_name: "test", 
-							school_zone: "前湖校区-医学部",
+							school_zone: "主校区",
 							avatar: "https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132",
-							school_zone: "前湖校区-医学部",
+							school_zone: "主校区",
 							user_name: "test",
 						},
 						comment_num: 0,

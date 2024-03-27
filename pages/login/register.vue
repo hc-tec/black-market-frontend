@@ -7,71 +7,87 @@
 				transform: `translateX(-50%) rotateY(${rotate ? 0 : 180}deg)`,
 				zIndex: rotate ? 1 : 0
 			}">
-			
 			<ncu-form-item :animaDelay="0">
-				<ncu-dance-words
-					:style="{
-						fontSize: '1.2rem',
-					}"
-					:words="projectTitle">
-				</ncu-dance-words>
+				<image mode="aspectFit" src="/static/mall2.png"></image>
 			</ncu-form-item>
-			
-			<ncu-form-item :animaDelay="0.2">
+			<!-- <ncu-form-item :animaDelay="0.2">
 				<ncu-img-choose
 					:src="userInfo.avatar"
 					@change="chooseAvatar">
 				</ncu-img-choose>
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
-			<ncu-form-item :animaDelay="0.4">
+			<!-- <ncu-form-item :animaDelay="0.4">
 				<v-input
 					icon="people"
 					placeholder="用户名"
-					size="mini"
+					size="big"
 					v-model="userInfo.user_name">
 				</v-input>
-			</ncu-form-item>
-			<ncu-form-item :animaDelay="0.6">
+			</ncu-form-item> -->
+			<!-- <ncu-form-item :animaDelay="0.6">
 				<v-input
 					icon="addressbook"
 					placeholder="学号"
-					size="mini"
+					size="big"
 					v-model="userInfo.student_id">
 				</v-input>
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
-			<ncu-form-item :animaDelay="0.8">
+			<!-- <ncu-form-item :animaDelay="0.8">
 				<v-input
 					icon="lock"
 					placeholder="密码,至少含1个小写字母，1个数字，1个特殊字符"
 					type="password"
-					size="mini"
+					size="big"
 					v-model="userInfo.password">
 				</v-input>
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
-			<ncu-form-item :animaDelay="1">
+			<!-- <ncu-form-item :animaDelay="1">
 				<v-input
 					icon="message"
-					placeholder="QQ"
-					size="mini"
-					v-model="userInfo.qq">
+					placeholder="联系方式"
+					size="big"
+					v-model="userInfo.contact">
 				</v-input>
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
-			<ncu-form-item :animaDelay="1.2">
+			<ncu-form-item :animaDelay="0.4">
 				<v-input
-					:value="getSchoolZoneLabelByValue()"
-					icon="shop"
-					size="mini"
-					placeholder="请选择校区"
-					disabled
-					@click="schoolZoneItem.open=true">
+					icon="message"
+					placeholder="请输入邮箱"
+					size="big"
+					v-model="userInfo.email">
 				</v-input>
 			</ncu-form-item>
 			
 			<ncu-form-item
+				:animaDelay="0.6"
+				:marginBottom="20">
+				<v-valid-input
+					ref="validCodeInput"
+					icon="focus"
+					placeholder="验证码,未收到请查询垃圾邮箱"
+					size="big"
+					v-model="userInfo.ver_code"
+					@send="validCodeSend">
+					
+				</v-valid-input>
+			</ncu-form-item>
+			
+			<!-- <ncu-form-item :animaDelay="0.8" >
+				<v-input
+					:value="getSchoolZoneLabelByValue()"
+					icon="shop"
+					size="big"
+					placeholder="请选择校区"
+					disabled
+					@click="schoolZoneItem.open=true">
+				</v-input>
+			</ncu-form-item> -->
+			
+			<!-- <ncu-form-item
 				:animaDelay="1.4">
 				<v-input
 					type="textarea"
@@ -79,36 +95,24 @@
 					placeholder="个人简介"
 					v-model="userInfo.profile">
 				</v-input>
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
-			<ncu-form-item 
-				:marginBottom="20"
-				:animaDelay="1.6">
-				<v-valid-input
-					ref="validCodeInput"
-					icon="focus"
-					placeholder="验证码"
-					size="mini"
-					v-model="userInfo.ver_code"
-					@send="validCodeSend">
-					
-				</v-valid-input>
-			</ncu-form-item>
 			
-			<ncu-form-item :animaDelay="1.6">
+			
+			<ncu-form-item :animaDelay="0.8">
 				<ncu-button
-					bgImage="green"
+					bgImage="white"
 					width="80%"
 					shadow
 					:radius="true"
-					@click="register">
-					完成注册
+					@click="loginOrRegister">
+					登录 / 注册
 				</ncu-button> 
 			</ncu-form-item>
 			
-			<ncu-form-item :animaDelay="1.8">
+			<!-- <ncu-form-item :animaDelay="1.8">
 				<ncu-button
-					bgColor="blue"
+					bgColor="white"
 					width="80%"
 					shadow
 					:hollowOut="true"
@@ -116,7 +120,7 @@
 					@click="login">
 					返回登录界面
 				</ncu-button> 
-			</ncu-form-item>
+			</ncu-form-item> -->
 			
 		</div>
 		
@@ -136,7 +140,7 @@
 <script>
 	import GlobalData from '../../common/global.js'
 	import { uniFileUploader, httpPost } from '../../common/http.js'
-	import { Host, register_api, image_upload_api, getEmailCode_api, wechatRegister_api } from '../../common/api.js'
+	import { Host, loginOrRegister_api, image_upload_api, getEmailCode_api, wechatRegister_api } from '../../common/api.js'
 	import { validator } from '../../common/func.js'
 	import { schoolZones, projectTitle } from '../../common/config.js'
     export default {
@@ -167,7 +171,8 @@
 					student_id: '8002119303',
 					user_name: 'test3',
 					password: 'sun19961203@',
-					qq: '2598772546',
+					email: '2598772546@qq.com',
+					contact: '2598772546',
 					profile: '',
 					avatar: '',
 					school_zone: 1,
@@ -192,16 +197,20 @@
 			async validCodeSend() {
 				if(this.isLoading) return
 				this.$emit('input', true)
-				if(!this.userInfo.qq) {
-					this.$emit('messageOpen', ['QQ号不能为空', 'danger'])
+				if(!this.userInfo.email) {
+					this.$emit('messageOpen', ['email不能为空', 'danger'])
 					return
 				}
 				this.$refs.validCodeInput.send()
 				const [res, err] = await httpPost(getEmailCode_api,
-												{qq: this.userInfo.qq},
+												{email: this.userInfo.email},
 												2006)
 				this.$emit('input', false)
-				err || this.$emit('messageOpen', ['验证码发送成功'])
+				if (err) {
+					this.$emit('messageOpen', [err, 'danger'])
+				} else {
+					this.$emit('messageOpen', ['验证码发送成功'])
+				}
 			},
 			getSchoolZoneLabelByValue() {
 				const schoolZoneIndex = 
@@ -218,14 +227,12 @@
 				this.getSchoolZoneLabelByValue()
 			},
 			login() {
-				this.$emit('onRotate', !this.rotate)
-				GlobalData.wechatLoginJsCode = ''
+				// this.$emit('onRotate', !this.rotate)
+				// GlobalData.wechatLoginJsCode = ''
 			},
 			userInfoValidator() {
-				const requiredFields = ['user_name', 'student_id', 'password', 
-										'qq', 'school_zone', 'ver_code']
-				const requiredFieldsHans = ['用户名', '学号', '密码', 'qq', '所属校区',
-										'验证码']
+				const requiredFields = ['email',  'ver_code']
+				const requiredFieldsHans = ['邮箱', '验证码']
 				return validator(this.userInfo, requiredFields, requiredFieldsHans)
 			},
 			async handleAvatarUpload() {
@@ -238,7 +245,7 @@
 				}
 				return res
 			},
-			async register() {
+			async loginOrRegister() {
 				if(this.isLoading) return
 				this.$emit('input', true)
 				let res;
@@ -264,11 +271,23 @@
 				this.$emit('input', false)
 				err && this.$emit('messageOpen', [err, 'danger'])
 				!err && (this.$emit('messageOpen', ['注册成功']),
-						this.login())
+						this.saveData(res))
 				
 			},
+			saveData(res) {
+				GlobalData.userInfo = res.data
+				GlobalData.userInfo['isLogin'] = true
+				GlobalData.focusUserInfo = {}
+				
+				// 将 set-cookie 字段内容保存至 storage
+				uni.setStorageSync('cookie', res.header['Set-Cookie'])
+				uni.navigateTo({
+					url: '/pages/index/index'
+				})
+				GlobalData.login.noticeWatcher()
+			},
 			async normalRegister(data) {
-				return await httpPost(register_api, data, 2000);
+				return await httpPost(loginOrRegister_api, data, 2000);
 			},
 			async wechatRegister(data) {
 				data.js_code = GlobalData.wechatLoginJsCode
@@ -279,10 +298,7 @@
 			}
 		},
 		async created() {
-			const userInfo = await this.getUserInfo()
-			if(userInfo.errMsg === "getUserInfo:ok") {
-				this.userInfo.avatar = userInfo.userInfo.avatarUrl
-			}
+			
 		}
     }
 </script>
@@ -290,22 +306,22 @@
 <style lang="scss" scoped>
 	.ncu-register {
 		width: 90%;
-		height: 80vh;
-		margin: 10vh auto;
-		padding: 20% 30px 30% 30px;
-		background-color: var(--main-bg-color);
-		background-image: url(http://neumorphic.cn/static/50bf7e26-4f8b-4205-9f7c-60787297c668.svg);
+		height: 60vh;
+		margin: 0 auto;
+		padding: 20% 30px;
+		// background-color: var(--main-bg-color);
+		// background-image: url(http://neumorphic.cn/static/50bf7e26-4f8b-4205-9f7c-60787297c668.svg);
 		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: 300%;
 		border-radius: 6px;
 		text-align: center;
-		
+		backdrop-filter: blur(30px);
 		position: absolute;
 		top: 0;
 		left: 50%;
 		transform-style: preserve-3d;
-		transition: all 600ms ease-out;
+		// transition: all 600ms ease-out;
 		overflow: auto;
 	
 	}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@baiducloud/qianfan": "^0.0.7"
+  }
+}
